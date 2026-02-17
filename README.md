@@ -1,234 +1,221 @@
 # Lakehouse Batch Project (Bronze → Silver → Gold)
-**DuckDB + Parquet + Airflow + dbt + Great Expectations**
-
-A fully reproducible end-to-end Data Engineering project implementing a Lakehouse architecture with clear Bronze, Silver, and Gold layers.  
-Designed for portfolio demonstration and direct cloud mapping to Azure and AWS environments.
+DuckDB + Parquet + Airflow + dbt + Great Expectations  
+AWS-Ready Architecture (S3 + Athena | us-east-2 | Free Tier Safe)
 
 ---
 
-# Project Objective
+## Overview
 
-This project demonstrates:
+This project implements a production-grade Lakehouse Batch Architecture using clear Bronze, Silver, and Gold layers.
 
-- Lakehouse architecture (Bronze / Silver / Gold layers)
-- Partitioned Parquet data lake storage
-- Orchestration with Apache Airflow
+It is designed to:
+
+- Demonstrate real-world Data Engineering architecture
+- Be fully reproducible locally (Docker-based execution)
+- Map directly to AWS cloud infrastructure
+- Follow enterprise-grade structuring patterns
+- Remain Free Tier safe while still using real AWS services
+- Be portfolio-ready for the US Data Engineering market
+
+---
+
+## Project Objectives
+
+This repository demonstrates:
+
+- Layered Lakehouse architecture (Bronze / Silver / Gold)
+- Partitioned Parquet data lake structure
+- Orchestration using Apache Airflow
 - Transformations and testing with dbt
-- Data Quality Gate using Great Expectations
-- Reproducible local setup via Docker + Make
-- Direct architectural mapping to Azure and AWS
+- Data Quality enforcement using Great Expectations
+- Analytical execution using DuckDB
+- Cloud-aligned AWS architecture
+- Versioned SQL and infrastructure logic
+- Clear separation of compute, storage, and transformation layers
 
 ---
 
-# Real-World Data Source
+## Real-World Dataset
 
-**NYC Taxi & Limousine Commission (TLC) Trip Record Data**
+NYC Taxi & Limousine Commission (TLC) Trip Record Data
 
-Official public dataset published by NYC TLC.
+Why TLC:
 
-Why this dataset:
 - Operational transactional data
-- Real-world schema complexity
-- Monthly partitioning structure
-- High data volume
-- Official documentation and data dictionary
-- Available via AWS Open Data Registry (cloud-aligned)
-
-This makes it production-relevant and suitable for enterprise data engineering portfolios.
+- Real production-like schema complexity
+- Monthly partitioned dataset
+- Public and well-documented
+- Widely used in enterprise Data Engineering environments
+- Cloud-aligned distribution patterns
 
 ---
 
-# Architecture Overview
+## Architecture – Logical Flow
 
-            +-------------------------+
-            | NYC TLC Trip Records    |
-            | (CSV / Parquet monthly) |
-            +------------+------------+
-                         |
-                         v
-                (01) Ingestion
-                         |
-                         v
-        🥉 Bronze (Raw Parquet + partitioned)
-                         |
-                         v
-    (02) Great Expectations Quality Gate
-                         |
-                         v
-       (03) dbt run → 🥈 Silver (conformed)
-                         |
-                         v
-       (04) dbt run → 🥇 Gold (data marts)
-                         |
-                         v
-            DuckDB (lakehouse.duckdb)
+NYC TLC Data (Monthly Files)
+        │
+        ▼
+(01) Ingestion
+        │
+        ▼
+Bronze Layer – Raw partitioned Parquet files
+        │
+        ▼
+(02) Great Expectations – Data Quality Validation Gate
+        │
+        ▼
+(03) dbt Transformations → Silver Layer (Conformed Data)
+        │
+        ▼
+(04) dbt Aggregations → Gold Layer (Business Marts)
+        │
+        ▼
+DuckDB Analytical Engine (data/lakehouse.duckdb)
 
 ---
 
-# Tech Stack (Local Environment)
+## Local Technology Stack
 
-- Apache Airflow (orchestration)
-- DuckDB (analytical engine)
-- Parquet + Snappy (data lake format)
-- dbt-duckdb (transformations & tests)
-- Great Expectations (data quality validation)
-- Docker + Make (reproducibility)
+- Apache Airflow (Orchestration)
+- DuckDB (Lakehouse analytical engine)
+- Parquet + Snappy (Columnar storage format)
+- dbt-duckdb (Transformations and testing)
+- Great Expectations (Data validation layer)
+- Docker + Make (Reproducible environment)
 
 ---
 
-# Quick Start
+## AWS Cloud Alignment (us-east-2)
 
-## 1. Start the environment
+This project maps directly to AWS architecture while remaining Free Tier safe.
 
-```bash
-make up
-http://localhost:8080
-username: admin
-password: admin
-make run-local
-make logs
+Local to AWS mapping:
 
-Pipeline Stages
-1. Ingestion
+Local Parquet → Amazon S3  
+DuckDB → Athena (serverless querying)  
+Airflow → MWAA (conceptual mapping, not deployed in Phase 1)  
+dbt + GE → AWS Glue Jobs (optional Phase 2)  
 
-Downloads a monthly TLC dataset and stores it in Bronze as partitioned Parquet files.
+AWS Services Used in Phase 1:
 
-2. Data Quality Gate
+- Amazon S3 (Bronze/Silver/Gold lake storage)
+- Amazon Athena (Serverless SQL on Gold layer)
+- AWS IAM (Least privilege policies)
 
-Great Expectations validates:
+Free Tier Guardrails:
 
-Non-null primary identifiers
+- Region: us-east-2
+- $1 budget alert configured
+- No always-on services
+- Manual execution only
+- Athena queries limited to Gold partitions
 
-Accepted value ranges
+---
 
-Basic schema integrity
+## Repository Structure
 
-Pipeline execution stops if validation fails.
-
-3. Silver Layer (dbt)
-
-Type casting
-
-Schema normalization
-
-Data cleaning
-
-4. Gold Layer (dbt)
-
-Business-ready aggregations
-
-Daily revenue mart
-
-Analytical metrics
 lakehouse-b2s2g/
-  README.md
-  Makefile
-  docker-compose.yml
-  requirements.txt
 
-  data/
-    bronze/
-    silver/
-    gold/
+README.md  
+RUNBOOK.md  
+Makefile  
+docker-compose.yml  
+requirements.txt  
 
-  src/
-    ingest/
-      tlc_download.py
-      tlc_to_bronze.py
-    ge_run.py
+data/  
+  bronze/  
+  silver/  
+  gold/  
+  lakehouse.duckdb  
 
-  airflow/
-    dags/
-      lakehouse_bsg_dag.py
+src/  
+  ingest/  
+    tlc_download.py  
+    tlc_to_bronze.py  
+  ge/  
+    ge_run.py  
+  utils/  
+    config.py  
+    paths.py  
 
-  dbt/
-    lakehouse_dbt/
-      dbt_project.yml
-      profiles.yml.example
-      models/
-        silver/
-          stg_trips.sql
-        gold/
-          mart_revenue_daily.sql
-      tests/
-        schema.yml
+airflow/  
+  dags/  
+    lakehouse_bsg_dag.py  
 
-  cloud/
-    azure/
-      README.md
-      mapping.md
-    aws/
-      README.md
-      mapping.md
+dbt/  
+  lakehouse_dbt/  
+    dbt_project.yml  
+    profiles.yml.example  
+    models/  
+      silver/  
+        stg_trips.sql  
+      gold/  
+        mart_revenue_daily.sql  
+    tests/  
+      schema.yml  
 
-Outputs
+cloud/  
+  aws/  
+    README.md  
+    athena/  
+      setup.sql  
+      gold_tables.sql  
+      queries.sql  
+    scripts/  
+      sync_to_s3.ps1  
+    iam/  
+      local_user_policy.json  
+      glue_role_policy.json  
 
-Bronze raw files: data/bronze/
+  azure/  
+    README.md  
+    mapping.md  
 
-DuckDB database file: data/lakehouse.duckdb
+---
 
-Gold mart example: mart_revenue_daily
+## Expected Outputs
 
-Outputs
+Local Outputs:
 
-Bronze raw files: data/bronze/
+- Bronze raw files in data/bronze/
+- Silver conformed datasets in data/silver/
+- Gold analytical marts in data/gold/
+- DuckDB database file in data/lakehouse.duckdb
+- Gold example mart: mart_revenue_daily
 
-DuckDB database file: data/lakehouse.duckdb
+AWS Outputs (Phase 1):
 
-Gold mart example: mart_revenue_daily
+- S3 lake storage with partitioned structure
+- Athena external tables pointing to Gold layer
+- Queryable analytics in AWS console
 
-Cloud Architecture Mapping
-Azure Equivalent
-Local Component	Azure Equivalent
-Local Parquet	ADLS Gen2
-Airflow	Azure Data Factory
-dbt + GE	Databricks Job / Fabric Pipeline
-DuckDB	Synapse / Fabric Warehouse
+---
 
-Details available in:
+## Why This Project Is Portfolio-Grade
 
-cloud/azure/README.md
+- Clear Lakehouse layer separation
+- Production-style data validation gate
+- Tested transformation logic
+- Analytics-as-code (Athena SQL versioned)
+- Least-privilege IAM structure
+- Reproducible environment
+- Cloud-ready architecture
+- Enterprise documentation style
+- US-market aligned stack (Airflow + dbt + AWS)
 
-AWS Equivalent
-Local Component	AWS Equivalent
-Local Parquet	Amazon S3
-Airflow	MWAA (Managed Airflow)
-dbt + GE	AWS Glue Job
-DuckDB	Redshift or Athena
+---
 
-Details available in:
+## Roadmap (Planned Extensions)
 
-cloud/aws/README.md
+- Incremental load implementation
+- Glue-based cloud transformation jobs
+- Data lineage visualization
+- CI pipeline (dbt + GE automated checks)
+- Cost-aware infrastructure blueprint
+- Streaming extension (separate project)
 
-Why This Project Is Portfolio-Ready
+---
 
-Fully reproducible via Docker
-
-Clear Lakehouse layer separation
-
-Production-like data validation gate
-
-Tested transformation logic
-
-Cloud-ready architectural thinking
-
-Real-world public dataset
-
-Enterprise documentation style
-
-Next Steps (Planned Extensions)
-
-Incremental load support
-
-Data lineage visualization
-
-CI pipeline (GitHub Actions)
-
-Cost-aware cloud deployment blueprint
-
-Streaming extension (Kafka + ClickHouse)
-
-Author
-
-Data Engineering Portfolio Project
-Focused on Azure & AWS modern data stack alignment.
+Author:  
+Data Engineering Portfolio Project  
+Focused on AWS and Azure modern data stack alignment.
