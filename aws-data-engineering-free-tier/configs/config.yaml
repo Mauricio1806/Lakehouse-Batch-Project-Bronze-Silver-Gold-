@@ -1,0 +1,18 @@
+﻿aws:
+  region: us-east-2
+  s3_bucket: mauricio-us-macro-lakehouse-us-east-2
+  bronze_prefix: bronze/bls
+  silver_prefix: silver/bls
+  gold_prefix: gold/bls
+
+bls:
+  endpoint: https://api.bls.gov/publicAPI/v2/timeseries/data/
+  start_year: 2023
+  end_year: 2026
+  series:
+    # CPI-U: All items, U.S. city average (monthly)
+    - "CUUR0000SA0"
+    # Unemployment rate: U.S. (monthly)
+    - "LNS14000000"
+
+

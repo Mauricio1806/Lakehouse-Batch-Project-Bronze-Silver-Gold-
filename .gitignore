@@ -1,0 +1,19 @@
+# data outputs
+data/bronze/
+data/silver/
+data/gold/
+data/*.duckdb
+*.parquet
+
+# python
+__pycache__/
+.venv/
+
+# dbt
+dbt/**/target/
+dbt/**/dbt_packages/
+dbt/**/logs/
+
+# airflow
+airflow/logs/
+airflow/plugins/__pycache__/
