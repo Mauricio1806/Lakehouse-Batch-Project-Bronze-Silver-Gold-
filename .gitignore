@@ -17,3 +17,13 @@ dbt/**/logs/
 # airflow
 airflow/logs/
 airflow/plugins/__pycache__/
+# Airflow runtime
+airflow_logs/
+airflow/logs/
+airflow/logs/**
+
+# Local env
+.env
+__pycache__/
+*.pyc
+.vscode/
