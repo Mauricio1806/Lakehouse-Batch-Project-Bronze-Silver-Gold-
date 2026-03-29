@@ -23,7 +23,8 @@
         "athena:GetQueryExecution",
         "athena:GetQueryResults",
         "athena:StopQueryExecution",
-        "athena:GetWorkGroup"
+        "athena:GetWorkGroup",
+        "athena:UpdateWorkGroup"
       ],
       "Resource": [
         "arn:aws:athena:us-east-1:*:workgroup/primary"

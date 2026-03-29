@@ -21,30 +21,52 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# ── Athena output location ────────────────────────────────────────────────────
+# ── Resolve Athena output location ───────────────────────────────────────────
 if (-not $OutputBucket) {
-    # Reuse the lakehouse bucket with an athena-results prefix
     $OutputBucket = $Bucket
-    $OutputPrefix = "athena-results"
-} else {
-    $OutputPrefix = ""
 }
-$OutputLocation = if ($OutputPrefix) {
-    "s3://$OutputBucket/$OutputPrefix/"
+$OutputLocation = "s3://$OutputBucket/athena-results/"
+
+# Configure the workgroup so it always has an output location.
+# This also makes the individual start-query-execution calls simpler
+# (no --result-configuration needed, workgroup setting takes over).
+Write-Host "==> Configuring Athena workgroup 'primary' output: $OutputLocation"
+aws athena update-work-group `
+    --work-group primary `
+    --configuration-updates "ResultConfigurationUpdates={OutputLocation=$OutputLocation}" `
+    --region $Region `
+    --profile $Profile
+if ($LASTEXITCODE -ne 0) {
+    Write-Warning "Could not update workgroup (may lack athena:UpdateWorkGroup permission). Will pass OutputLocation per-query instead."
+    $UsePerQueryOutput = $true
 } else {
-    "s3://$OutputBucket/"
+    $UsePerQueryOutput = $false
 }
 
 function Invoke-Athena {
     param([string]$Query, [string]$Label)
     Write-Host "`n==> $Label"
-    $result = aws athena start-query-execution `
-        --query-string $Query `
-        --result-configuration "OutputLocation=$OutputLocation" `
-        --region $Region `
-        --profile $Profile `
-        --output json | ConvertFrom-Json
 
+    # Build argument list — include result-configuration only if workgroup update failed
+    $startArgs = @(
+        "athena", "start-query-execution",
+        "--query-string", $Query,
+        "--work-group", "primary",
+        "--region", $Region,
+        "--profile", $Profile,
+        "--output", "json"
+    )
+    if ($UsePerQueryOutput) {
+        $startArgs += "--result-configuration"
+        $startArgs += "OutputLocation=$OutputLocation"
+    }
+
+    $rawResult = & aws @startArgs 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "start-query-execution failed [$Label]: $rawResult"
+        exit 1
+    }
+    $result = $rawResult | ConvertFrom-Json
     $qid = $result.QueryExecutionId
     Write-Host "    QueryExecutionId: $qid"
 
@@ -78,20 +100,21 @@ $GoldModels = @(
 )
 
 Write-Host "`n==> Reorganising Gold Parquet files into sub-prefixes..."
+
 foreach ($model in $GoldModels) {
     $src = "s3://$Bucket/lakehouse/gold/$model.parquet"
     $dst = "s3://$Bucket/lakehouse/gold/$model/$model.parquet"
 
-    # Check whether source exists (flat layout)
     $exists = aws s3 ls $src --profile $Profile --region $Region 2>&1
-    if ($LASTEXITCODE -eq 0 -and $exists -match $model) {
+
+    if (($LASTEXITCODE -eq 0) -and ($exists -match $model)) {
         Write-Host "    Moving $model.parquet -> $model/$model.parquet"
         aws s3 mv $src $dst --profile $Profile --region $Region
-    } else {
-        Write-Host "    $model already in sub-prefix or not found — skipping mv"
+    }
+    else {
+        Write-Host "    $model already in sub-prefix or not found - skipping mv"
     }
 }
-
 # ── Step 1: Database ──────────────────────────────────────────────────────────
 Invoke-Athena "CREATE DATABASE IF NOT EXISTS lakehouse" "Create database: lakehouse"
 
@@ -120,8 +143,8 @@ $goldFiles = @(
 )
 
 foreach ($g in $goldFiles) {
-    $sql = (Get-Content (Join-Path $AthenaDir $g.File) -Raw) `
-        -replace "--.*`n", ""
+    $sql = (Get-Content (Join-Path $AthenaDir $g.File) -Raw)
+    $sql = $sql -replace "--.*`n", ""
     Invoke-Athena $sql $g.Label
 }
 
