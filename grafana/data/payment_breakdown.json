@@ -1,0 +1,52 @@
+[
+  {
+    "payment_type": 1,
+    "payment_method": "Credit Card",
+    "total_trips": 2594106,
+    "total_revenue": 80584382.07,
+    "avg_fare": 20.67,
+    "avg_tip": 4.4,
+    "pct_of_trips": 63.18,
+    "pct_of_revenue": 62.63
+  },
+  {
+    "payment_type": 0,
+    "payment_method": "Other",
+    "total_trips": 1085393,
+    "total_revenue": 36777911.46,
+    "avg_fare": 27.37,
+    "avg_tip": 0.48,
+    "pct_of_trips": 26.44,
+    "pct_of_revenue": 28.58
+  },
+  {
+    "payment_type": 2,
+    "payment_method": "Cash",
+    "total_trips": 380124,
+    "total_revenue": 9932339.14,
+    "avg_fare": 20.34,
+    "avg_tip": 0.0,
+    "pct_of_trips": 9.26,
+    "pct_of_revenue": 7.72
+  },
+  {
+    "payment_type": 4,
+    "payment_method": "Dispute",
+    "total_trips": 34269,
+    "total_revenue": 1065646.01,
+    "avg_fare": 24.69,
+    "avg_tip": 0.0,
+    "pct_of_trips": 0.83,
+    "pct_of_revenue": 0.83
+  },
+  {
+    "payment_type": 3,
+    "payment_method": "No Charge",
+    "total_trips": 11866,
+    "total_revenue": 311400.73,
+    "avg_fare": 20.35,
+    "avg_tip": 0.0,
+    "pct_of_trips": 0.29,
+    "pct_of_revenue": 0.24
+  }
+]

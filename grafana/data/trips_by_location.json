@@ -1,0 +1,2333 @@
+[
+  {
+    "pickup_location_id": 237,
+    "total_trips": 190295,
+    "total_revenue": 4329475.15,
+    "avg_fare": 14.77,
+    "avg_distance_miles": 3.81,
+    "avg_tip": 2.69,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 236,
+    "total_trips": 171416,
+    "total_revenue": 3903748.34,
+    "avg_fare": 15.04,
+    "avg_distance_miles": 1.99,
+    "avg_tip": 2.57,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 161,
+    "total_trips": 156499,
+    "total_revenue": 4677684.78,
+    "avg_fare": 20.45,
+    "avg_distance_miles": 2.87,
+    "avg_tip": 3.23,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 132,
+    "total_trips": 153484,
+    "total_revenue": 12496139.59,
+    "avg_fare": 63.27,
+    "avg_distance_miles": 15.33,
+    "avg_tip": 9.3,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 186,
+    "total_trips": 130824,
+    "total_revenue": 3741260.64,
+    "avg_fare": 19.47,
+    "avg_distance_miles": 2.33,
+    "avg_tip": 3.36,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 142,
+    "total_trips": 129356,
+    "total_revenue": 3195696.85,
+    "avg_fare": 16.48,
+    "avg_distance_miles": 3.45,
+    "avg_tip": 2.71,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 162,
+    "total_trips": 126872,
+    "total_revenue": 3545125.18,
+    "avg_fare": 18.63,
+    "avg_distance_miles": 4.83,
+    "avg_tip": 3.3,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 230,
+    "total_trips": 116675,
+    "total_revenue": 3912575.07,
+    "avg_fare": 23.47,
+    "avg_distance_miles": 3.12,
+    "avg_tip": 3.44,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 239,
+    "total_trips": 109387,
+    "total_revenue": 2671029.76,
+    "avg_fare": 16.54,
+    "avg_distance_miles": 5.09,
+    "avg_tip": 2.52,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 234,
+    "total_trips": 107961,
+    "total_revenue": 2938412.26,
+    "avg_fare": 18.56,
+    "avg_distance_miles": 2.6,
+    "avg_tip": 2.65,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 138,
+    "total_trips": 107932,
+    "total_revenue": 7792846.17,
+    "avg_fare": 46.99,
+    "avg_distance_miles": 9.56,
+    "avg_tip": 9.75,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 163,
+    "total_trips": 104009,
+    "total_revenue": 3004813.38,
+    "avg_fare": 19.55,
+    "avg_distance_miles": 2.45,
+    "avg_tip": 3.21,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 68,
+    "total_trips": 103062,
+    "total_revenue": 3105375.74,
+    "avg_fare": 21.05,
+    "avg_distance_miles": 4.13,
+    "avg_tip": 3.01,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 170,
+    "total_trips": 102310,
+    "total_revenue": 2819784.83,
+    "avg_fare": 18.76,
+    "avg_distance_miles": 5.68,
+    "avg_tip": 2.81,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 79,
+    "total_trips": 100372,
+    "total_revenue": 2713415.5,
+    "avg_fare": 19.12,
+    "avg_distance_miles": 7.52,
+    "avg_tip": 2.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 48,
+    "total_trips": 96339,
+    "total_revenue": 2694702.67,
+    "avg_fare": 19.35,
+    "avg_distance_miles": 2.71,
+    "avg_tip": 2.59,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 141,
+    "total_trips": 92360,
+    "total_revenue": 2130579.48,
+    "avg_fare": 15.46,
+    "avg_distance_miles": 2.4,
+    "avg_tip": 2.33,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 164,
+    "total_trips": 86156,
+    "total_revenue": 2492794.13,
+    "avg_fare": 19.97,
+    "avg_distance_miles": 5.07,
+    "avg_tip": 2.73,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 249,
+    "total_trips": 85633,
+    "total_revenue": 2332935.26,
+    "avg_fare": 18.97,
+    "avg_distance_miles": 3.79,
+    "avg_tip": 2.39,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 107,
+    "total_trips": 81853,
+    "total_revenue": 2160784.31,
+    "avg_fare": 18.07,
+    "avg_distance_miles": 3.05,
+    "avg_tip": 2.44,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 140,
+    "total_trips": 80256,
+    "total_revenue": 2025446.41,
+    "avg_fare": 17.48,
+    "avg_distance_miles": 4.05,
+    "avg_tip": 2.45,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 238,
+    "total_trips": 79173,
+    "total_revenue": 1890039.13,
+    "avg_fare": 16.58,
+    "avg_distance_miles": 5.95,
+    "avg_tip": 2.28,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 263,
+    "total_trips": 77272,
+    "total_revenue": 1818514.64,
+    "avg_fare": 16.07,
+    "avg_distance_miles": 3.63,
+    "avg_tip": 2.18,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 246,
+    "total_trips": 70568,
+    "total_revenue": 2112697.52,
+    "avg_fare": 21.28,
+    "avg_distance_miles": 4.63,
+    "avg_tip": 2.59,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 229,
+    "total_trips": 66641,
+    "total_revenue": 1710621.04,
+    "avg_fare": 17.28,
+    "avg_distance_miles": 2.28,
+    "avg_tip": 2.64,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 90,
+    "total_trips": 61098,
+    "total_revenue": 1637064.0,
+    "avg_fare": 18.32,
+    "avg_distance_miles": 3.78,
+    "avg_tip": 2.53,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 114,
+    "total_trips": 57706,
+    "total_revenue": 1593211.05,
+    "avg_fare": 19.32,
+    "avg_distance_miles": 5.23,
+    "avg_tip": 2.37,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 262,
+    "total_trips": 57149,
+    "total_revenue": 1429324.39,
+    "avg_fare": 17.38,
+    "avg_distance_miles": 6.25,
+    "avg_tip": 2.27,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 113,
+    "total_trips": 56703,
+    "total_revenue": 1511902.98,
+    "avg_fare": 18.27,
+    "avg_distance_miles": 2.19,
+    "avg_tip": 2.52,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 231,
+    "total_trips": 55765,
+    "total_revenue": 1753886.81,
+    "avg_fare": 22.89,
+    "avg_distance_miles": 9.09,
+    "avg_tip": 2.59,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 100,
+    "total_trips": 55153,
+    "total_revenue": 1630105.79,
+    "avg_fare": 20.6,
+    "avg_distance_miles": 2.58,
+    "avg_tip": 2.85,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 43,
+    "total_trips": 52816,
+    "total_revenue": 1329629.97,
+    "avg_fare": 16.89,
+    "avg_distance_miles": 2.88,
+    "avg_tip": 2.97,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 137,
+    "total_trips": 47729,
+    "total_revenue": 1249089.81,
+    "avg_fare": 18.47,
+    "avg_distance_miles": 2.79,
+    "avg_tip": 1.93,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 143,
+    "total_trips": 47468,
+    "total_revenue": 1202262.91,
+    "avg_fare": 17.84,
+    "avg_distance_miles": 10.39,
+    "avg_tip": 2.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 148,
+    "total_trips": 47243,
+    "total_revenue": 1429516.75,
+    "avg_fare": 22.31,
+    "avg_distance_miles": 10.68,
+    "avg_tip": 2.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 144,
+    "total_trips": 45358,
+    "total_revenue": 1365924.66,
+    "avg_fare": 21.77,
+    "avg_distance_miles": 7.43,
+    "avg_tip": 2.37,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 233,
+    "total_trips": 43353,
+    "total_revenue": 1248395.37,
+    "avg_fare": 19.94,
+    "avg_distance_miles": 3.98,
+    "avg_tip": 2.64,
+    "active_days": 32
+  },
+  {
+    "pickup_location_id": 158,
+    "total_trips": 36997,
+    "total_revenue": 1130136.27,
+    "avg_fare": 22.02,
+    "avg_distance_miles": 2.66,
+    "avg_tip": 2.43,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 151,
+    "total_trips": 34096,
+    "total_revenue": 809940.16,
+    "avg_fare": 17.46,
+    "avg_distance_miles": 10.88,
+    "avg_tip": 1.97,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 211,
+    "total_trips": 33673,
+    "total_revenue": 1002108.95,
+    "avg_fare": 21.29,
+    "avg_distance_miles": 6.33,
+    "avg_tip": 2.52,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 75,
+    "total_trips": 32929,
+    "total_revenue": 850126.77,
+    "avg_fare": 20.06,
+    "avg_distance_miles": 6.65,
+    "avg_tip": 1.42,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 87,
+    "total_trips": 29086,
+    "total_revenue": 1042210.88,
+    "avg_fare": 27.33,
+    "avg_distance_miles": 4.43,
+    "avg_tip": 2.3,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 50,
+    "total_trips": 27714,
+    "total_revenue": 775457.47,
+    "avg_fare": 20.52,
+    "avg_distance_miles": 7.93,
+    "avg_tip": 1.64,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 166,
+    "total_trips": 24946,
+    "total_revenue": 679257.33,
+    "avg_fare": 21.21,
+    "avg_distance_miles": 27.69,
+    "avg_tip": 1.67,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 13,
+    "total_trips": 23259,
+    "total_revenue": 845297.97,
+    "avg_fare": 26.86,
+    "avg_distance_miles": 23.17,
+    "avg_tip": 3.21,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 261,
+    "total_trips": 20444,
+    "total_revenue": 756627.16,
+    "avg_fare": 27.53,
+    "avg_distance_miles": 4.28,
+    "avg_tip": 3.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 41,
+    "total_trips": 19758,
+    "total_revenue": 547997.31,
+    "avg_fare": 22.78,
+    "avg_distance_miles": 22.0,
+    "avg_tip": 0.88,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 125,
+    "total_trips": 18490,
+    "total_revenue": 545499.83,
+    "avg_fare": 20.92,
+    "avg_distance_miles": 22.27,
+    "avg_tip": 2.6,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 74,
+    "total_trips": 17081,
+    "total_revenue": 469412.76,
+    "avg_fare": 22.69,
+    "avg_distance_miles": 6.24,
+    "avg_tip": 0.74,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 88,
+    "total_trips": 15721,
+    "total_revenue": 583822.69,
+    "avg_fare": 28.34,
+    "avg_distance_miles": 14.77,
+    "avg_tip": 2.53,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 42,
+    "total_trips": 14821,
+    "total_revenue": 445265.2,
+    "avg_fare": 25.86,
+    "avg_distance_miles": 74.63,
+    "avg_tip": 0.35,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 4,
+    "total_trips": 14793,
+    "total_revenue": 424372.61,
+    "avg_fare": 21.98,
+    "avg_distance_miles": 17.46,
+    "avg_tip": 0.97,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 24,
+    "total_trips": 12665,
+    "total_revenue": 328616.49,
+    "avg_fare": 19.71,
+    "avg_distance_miles": 13.35,
+    "avg_tip": 1.84,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 232,
+    "total_trips": 11898,
+    "total_revenue": 377889.27,
+    "avg_fare": 25.24,
+    "avg_distance_miles": 24.2,
+    "avg_tip": 0.94,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 244,
+    "total_trips": 10834,
+    "total_revenue": 365107.22,
+    "avg_fare": 28.59,
+    "avg_distance_miles": 20.39,
+    "avg_tip": 0.58,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 224,
+    "total_trips": 9920,
+    "total_revenue": 279201.78,
+    "avg_fare": 20.9,
+    "avg_distance_miles": 2.97,
+    "avg_tip": 1.26,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 45,
+    "total_trips": 9852,
+    "total_revenue": 322620.38,
+    "avg_fare": 25.18,
+    "avg_distance_miles": 3.92,
+    "avg_tip": 1.76,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 116,
+    "total_trips": 9487,
+    "total_revenue": 296289.01,
+    "avg_fare": 26.43,
+    "avg_distance_miles": 56.42,
+    "avg_tip": 0.57,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 7,
+    "total_trips": 9187,
+    "total_revenue": 294558.77,
+    "avg_fare": 26.56,
+    "avg_distance_miles": 64.35,
+    "avg_tip": 0.55,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 70,
+    "total_trips": 9096,
+    "total_revenue": 625948.7,
+    "avg_fare": 46.06,
+    "avg_distance_miles": 9.09,
+    "avg_tip": 8.75,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 209,
+    "total_trips": 9044,
+    "total_revenue": 313009.16,
+    "avg_fare": 26.47,
+    "avg_distance_miles": 4.38,
+    "avg_tip": 2.17,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 145,
+    "total_trips": 8529,
+    "total_revenue": 330048.59,
+    "avg_fare": 31.48,
+    "avg_distance_miles": 16.44,
+    "avg_tip": 1.75,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 255,
+    "total_trips": 8091,
+    "total_revenue": 280264.12,
+    "avg_fare": 28.94,
+    "avg_distance_miles": 4.57,
+    "avg_tip": 0.73,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 226,
+    "total_trips": 7558,
+    "total_revenue": 300364.05,
+    "avg_fare": 32.75,
+    "avg_distance_miles": 12.79,
+    "avg_tip": 2.26,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 61,
+    "total_trips": 6829,
+    "total_revenue": 244182.22,
+    "avg_fare": 32.07,
+    "avg_distance_miles": 40.27,
+    "avg_tip": 0.35,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 256,
+    "total_trips": 6516,
+    "total_revenue": 233326.45,
+    "avg_fare": 30.23,
+    "avg_distance_miles": 21.33,
+    "avg_tip": 0.88,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 112,
+    "total_trips": 6098,
+    "total_revenue": 210833.8,
+    "avg_fare": 28.18,
+    "avg_distance_miles": 4.67,
+    "avg_tip": 0.62,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 37,
+    "total_trips": 5974,
+    "total_revenue": 217399.87,
+    "avg_fare": 31.5,
+    "avg_distance_miles": 23.67,
+    "avg_tip": 0.35,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 152,
+    "total_trips": 5558,
+    "total_revenue": 160194.64,
+    "avg_fare": 24.1,
+    "avg_distance_miles": 51.63,
+    "avg_tip": 0.67,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 97,
+    "total_trips": 5546,
+    "total_revenue": 193363.25,
+    "avg_fare": 30.14,
+    "avg_distance_miles": 5.26,
+    "avg_tip": 0.84,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 33,
+    "total_trips": 5539,
+    "total_revenue": 215544.49,
+    "avg_fare": 32.77,
+    "avg_distance_miles": 45.44,
+    "avg_tip": 1.22,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 66,
+    "total_trips": 5381,
+    "total_revenue": 201075.17,
+    "avg_fare": 31.25,
+    "avg_distance_miles": 22.05,
+    "avg_tip": 1.19,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 264,
+    "total_trips": 5365,
+    "total_revenue": 165558.55,
+    "avg_fare": 21.14,
+    "avg_distance_miles": 3.52,
+    "avg_tip": 3.96,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 65,
+    "total_trips": 5161,
+    "total_revenue": 189472.14,
+    "avg_fare": 30.95,
+    "avg_distance_miles": 5.44,
+    "avg_tip": 1.3,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 80,
+    "total_trips": 5087,
+    "total_revenue": 181604.23,
+    "avg_fare": 30.23,
+    "avg_distance_miles": 7.65,
+    "avg_tip": 0.7,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 129,
+    "total_trips": 4975,
+    "total_revenue": 190383.47,
+    "avg_fare": 31.5,
+    "avg_distance_miles": 41.71,
+    "avg_tip": 1.96,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 76,
+    "total_trips": 4974,
+    "total_revenue": 165291.89,
+    "avg_fare": 30.56,
+    "avg_distance_miles": 6.98,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 181,
+    "total_trips": 4926,
+    "total_revenue": 183933.31,
+    "avg_fare": 32.0,
+    "avg_distance_miles": 38.12,
+    "avg_tip": 0.76,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 243,
+    "total_trips": 4898,
+    "total_revenue": 175594.6,
+    "avg_fare": 30.81,
+    "avg_distance_miles": 6.91,
+    "avg_tip": 0.41,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 25,
+    "total_trips": 4821,
+    "total_revenue": 175391.91,
+    "avg_fare": 31.24,
+    "avg_distance_miles": 5.54,
+    "avg_tip": 0.92,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 225,
+    "total_trips": 4676,
+    "total_revenue": 172635.19,
+    "avg_fare": 32.65,
+    "avg_distance_miles": 24.7,
+    "avg_tip": 0.37,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 188,
+    "total_trips": 4437,
+    "total_revenue": 156080.71,
+    "avg_fare": 31.54,
+    "avg_distance_miles": 52.35,
+    "avg_tip": 0.23,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 89,
+    "total_trips": 4303,
+    "total_revenue": 160532.45,
+    "avg_fare": 32.93,
+    "avg_distance_miles": 7.04,
+    "avg_tip": 0.29,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 17,
+    "total_trips": 4017,
+    "total_revenue": 137927.54,
+    "avg_fare": 30.28,
+    "avg_distance_miles": 5.45,
+    "avg_tip": 0.43,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 130,
+    "total_trips": 4015,
+    "total_revenue": 142617.09,
+    "avg_fare": 31.25,
+    "avg_distance_miles": 7.31,
+    "avg_tip": 0.73,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 146,
+    "total_trips": 3997,
+    "total_revenue": 126672.14,
+    "avg_fare": 25.99,
+    "avg_distance_miles": 4.39,
+    "avg_tip": 1.25,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 49,
+    "total_trips": 3873,
+    "total_revenue": 140728.69,
+    "avg_fare": 31.74,
+    "avg_distance_miles": 76.58,
+    "avg_tip": 0.57,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 179,
+    "total_trips": 3604,
+    "total_revenue": 122577.54,
+    "avg_fare": 28.42,
+    "avg_distance_miles": 5.49,
+    "avg_tip": 0.57,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 36,
+    "total_trips": 3382,
+    "total_revenue": 116934.8,
+    "avg_fare": 29.6,
+    "avg_distance_miles": 5.45,
+    "avg_tip": 0.35,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 39,
+    "total_trips": 3259,
+    "total_revenue": 110961.16,
+    "avg_fare": 31.67,
+    "avg_distance_miles": 6.94,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 216,
+    "total_trips": 3120,
+    "total_revenue": 185381.68,
+    "avg_fare": 51.13,
+    "avg_distance_miles": 5.04,
+    "avg_tip": 5.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 223,
+    "total_trips": 3068,
+    "total_revenue": 135743.67,
+    "avg_fare": 35.84,
+    "avg_distance_miles": 5.9,
+    "avg_tip": 2.19,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 82,
+    "total_trips": 2983,
+    "total_revenue": 87724.32,
+    "avg_fare": 25.47,
+    "avg_distance_miles": 143.94,
+    "avg_tip": 0.49,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 260,
+    "total_trips": 2885,
+    "total_revenue": 99016.93,
+    "avg_fare": 28.58,
+    "avg_distance_miles": 4.72,
+    "avg_tip": 1.53,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 35,
+    "total_trips": 2742,
+    "total_revenue": 90237.23,
+    "avg_fare": 30.51,
+    "avg_distance_miles": 6.76,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 168,
+    "total_trips": 2691,
+    "total_revenue": 85670.22,
+    "avg_fare": 27.81,
+    "avg_distance_miles": 5.77,
+    "avg_tip": 0.37,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 177,
+    "total_trips": 2620,
+    "total_revenue": 93303.65,
+    "avg_fare": 32.34,
+    "avg_distance_miles": 44.58,
+    "avg_tip": 0.14,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 72,
+    "total_trips": 2565,
+    "total_revenue": 83971.18,
+    "avg_fare": 30.0,
+    "avg_distance_miles": 6.12,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 95,
+    "total_trips": 2551,
+    "total_revenue": 87367.56,
+    "avg_fare": 29.61,
+    "avg_distance_miles": 6.33,
+    "avg_tip": 0.55,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 193,
+    "total_trips": 2485,
+    "total_revenue": 87305.25,
+    "avg_fare": 29.37,
+    "avg_distance_miles": 63.29,
+    "avg_tip": 0.74,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 91,
+    "total_trips": 2320,
+    "total_revenue": 78278.06,
+    "avg_fare": 31.4,
+    "avg_distance_miles": 56.45,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 197,
+    "total_trips": 2291,
+    "total_revenue": 96326.15,
+    "avg_fare": 36.75,
+    "avg_distance_miles": 6.12,
+    "avg_tip": 1.89,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 127,
+    "total_trips": 2229,
+    "total_revenue": 79249.15,
+    "avg_fare": 31.21,
+    "avg_distance_miles": 7.33,
+    "avg_tip": 0.36,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 71,
+    "total_trips": 2194,
+    "total_revenue": 73257.56,
+    "avg_fare": 30.7,
+    "avg_distance_miles": 45.29,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 14,
+    "total_trips": 2102,
+    "total_revenue": 81177.06,
+    "avg_fare": 34.02,
+    "avg_distance_miles": 8.18,
+    "avg_tip": 0.32,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 62,
+    "total_trips": 2038,
+    "total_revenue": 68628.99,
+    "avg_fare": 30.43,
+    "avg_distance_miles": 5.8,
+    "avg_tip": 0.33,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 189,
+    "total_trips": 2037,
+    "total_revenue": 75881.18,
+    "avg_fare": 32.32,
+    "avg_distance_miles": 23.27,
+    "avg_tip": 0.85,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 228,
+    "total_trips": 1923,
+    "total_revenue": 73637.61,
+    "avg_fare": 33.17,
+    "avg_distance_miles": 7.01,
+    "avg_tip": 0.41,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 198,
+    "total_trips": 1883,
+    "total_revenue": 61509.96,
+    "avg_fare": 28.53,
+    "avg_distance_miles": 4.87,
+    "avg_tip": 0.45,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 69,
+    "total_trips": 1847,
+    "total_revenue": 60051.92,
+    "avg_fare": 29.78,
+    "avg_distance_miles": 6.54,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 10,
+    "total_trips": 1793,
+    "total_revenue": 107784.26,
+    "avg_fare": 50.53,
+    "avg_distance_miles": 10.23,
+    "avg_tip": 4.48,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 247,
+    "total_trips": 1660,
+    "total_revenue": 51065.78,
+    "avg_fare": 27.45,
+    "avg_distance_miles": 74.68,
+    "avg_tip": 0.19,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 159,
+    "total_trips": 1628,
+    "total_revenue": 49808.57,
+    "avg_fare": 27.4,
+    "avg_distance_miles": 72.07,
+    "avg_tip": 0.08,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 52,
+    "total_trips": 1613,
+    "total_revenue": 59772.47,
+    "avg_fare": 30.69,
+    "avg_distance_miles": 82.19,
+    "avg_tip": 1.24,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 85,
+    "total_trips": 1597,
+    "total_revenue": 57136.07,
+    "avg_fare": 32.19,
+    "avg_distance_miles": 6.65,
+    "avg_tip": 0.21,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 51,
+    "total_trips": 1593,
+    "total_revenue": 66799.2,
+    "avg_fare": 38.34,
+    "avg_distance_miles": 10.73,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 213,
+    "total_trips": 1593,
+    "total_revenue": 57152.39,
+    "avg_fare": 32.25,
+    "avg_distance_miles": 8.13,
+    "avg_tip": 0.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 157,
+    "total_trips": 1586,
+    "total_revenue": 66461.41,
+    "avg_fare": 34.9,
+    "avg_distance_miles": 5.41,
+    "avg_tip": 1.96,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 40,
+    "total_trips": 1581,
+    "total_revenue": 61482.75,
+    "avg_fare": 31.53,
+    "avg_distance_miles": 5.43,
+    "avg_tip": 0.92,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 55,
+    "total_trips": 1542,
+    "total_revenue": 63848.01,
+    "avg_fare": 39.25,
+    "avg_distance_miles": 10.59,
+    "avg_tip": 0.08,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 182,
+    "total_trips": 1504,
+    "total_revenue": 57877.76,
+    "avg_fare": 34.59,
+    "avg_distance_miles": 8.83,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 205,
+    "total_trips": 1466,
+    "total_revenue": 58630.75,
+    "avg_fare": 36.4,
+    "avg_distance_miles": 9.89,
+    "avg_tip": 0.12,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 254,
+    "total_trips": 1434,
+    "total_revenue": 56397.95,
+    "avg_fare": 36.33,
+    "avg_distance_miles": 9.9,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 215,
+    "total_trips": 1409,
+    "total_revenue": 64192.32,
+    "avg_fare": 39.58,
+    "avg_distance_miles": 8.93,
+    "avg_tip": 1.76,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 235,
+    "total_trips": 1406,
+    "total_revenue": 49868.98,
+    "avg_fare": 32.82,
+    "avg_distance_miles": 7.69,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 92,
+    "total_trips": 1399,
+    "total_revenue": 47412.98,
+    "avg_fare": 29.17,
+    "avg_distance_miles": 7.36,
+    "avg_tip": 0.31,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 63,
+    "total_trips": 1363,
+    "total_revenue": 43926.89,
+    "avg_fare": 29.55,
+    "avg_distance_miles": 6.21,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 195,
+    "total_trips": 1338,
+    "total_revenue": 62288.44,
+    "avg_fare": 39.06,
+    "avg_distance_miles": 7.76,
+    "avg_tip": 1.66,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 167,
+    "total_trips": 1337,
+    "total_revenue": 43607.16,
+    "avg_fare": 29.71,
+    "avg_distance_miles": 6.82,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 77,
+    "total_trips": 1274,
+    "total_revenue": 43723.04,
+    "avg_fare": 31.85,
+    "avg_distance_miles": 7.35,
+    "avg_tip": 0.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 106,
+    "total_trips": 1251,
+    "total_revenue": 46980.0,
+    "avg_fare": 31.5,
+    "avg_distance_miles": 5.85,
+    "avg_tip": 0.76,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 28,
+    "total_trips": 1204,
+    "total_revenue": 51105.46,
+    "avg_fare": 36.61,
+    "avg_distance_miles": 7.57,
+    "avg_tip": 1.59,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 78,
+    "total_trips": 1191,
+    "total_revenue": 42970.34,
+    "avg_fare": 32.68,
+    "avg_distance_miles": 8.26,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 26,
+    "total_trips": 1163,
+    "total_revenue": 32702.95,
+    "avg_fare": 25.8,
+    "avg_distance_miles": 5.04,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 191,
+    "total_trips": 1154,
+    "total_revenue": 47053.33,
+    "avg_fare": 36.51,
+    "avg_distance_miles": 9.82,
+    "avg_tip": 0.28,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 56,
+    "total_trips": 1150,
+    "total_revenue": 40657.92,
+    "avg_fare": 30.84,
+    "avg_distance_miles": 155.54,
+    "avg_tip": 0.4,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 169,
+    "total_trips": 1140,
+    "total_revenue": 37519.18,
+    "avg_fare": 29.85,
+    "avg_distance_miles": 7.0,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 86,
+    "total_trips": 1125,
+    "total_revenue": 57254.04,
+    "avg_fare": 48.21,
+    "avg_distance_miles": 14.28,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 258,
+    "total_trips": 1117,
+    "total_revenue": 37750.97,
+    "avg_fare": 29.87,
+    "avg_distance_miles": 6.51,
+    "avg_tip": 0.37,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 196,
+    "total_trips": 1102,
+    "total_revenue": 40561.15,
+    "avg_fare": 31.69,
+    "avg_distance_miles": 6.26,
+    "avg_tip": 0.95,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 133,
+    "total_trips": 1094,
+    "total_revenue": 42604.75,
+    "avg_fare": 33.03,
+    "avg_distance_miles": 6.91,
+    "avg_tip": 0.29,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 165,
+    "total_trips": 1089,
+    "total_revenue": 34839.44,
+    "avg_fare": 29.69,
+    "avg_distance_miles": 6.36,
+    "avg_tip": 0.11,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 83,
+    "total_trips": 1083,
+    "total_revenue": 39643.91,
+    "avg_fare": 30.83,
+    "avg_distance_miles": 111.26,
+    "avg_tip": 1.77,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 12,
+    "total_trips": 1082,
+    "total_revenue": 40249.2,
+    "avg_fare": 28.58,
+    "avg_distance_miles": 4.34,
+    "avg_tip": 2.87,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 117,
+    "total_trips": 1076,
+    "total_revenue": 53549.09,
+    "avg_fare": 47.17,
+    "avg_distance_miles": 13.83,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 155,
+    "total_trips": 1055,
+    "total_revenue": 36313.42,
+    "avg_fare": 32.09,
+    "avg_distance_miles": 6.83,
+    "avg_tip": 0.17,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 119,
+    "total_trips": 1052,
+    "total_revenue": 36351.36,
+    "avg_fare": 31.43,
+    "avg_distance_miles": 7.04,
+    "avg_tip": 0.14,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 18,
+    "total_trips": 1052,
+    "total_revenue": 38038.01,
+    "avg_fare": 33.09,
+    "avg_distance_miles": 8.36,
+    "avg_tip": 0.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 222,
+    "total_trips": 1050,
+    "total_revenue": 39988.04,
+    "avg_fare": 35.83,
+    "avg_distance_miles": 8.93,
+    "avg_tip": 0.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 219,
+    "total_trips": 1028,
+    "total_revenue": 69638.3,
+    "avg_fare": 57.76,
+    "avg_distance_miles": 11.93,
+    "avg_tip": 5.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 210,
+    "total_trips": 1025,
+    "total_revenue": 39271.36,
+    "avg_fare": 36.07,
+    "avg_distance_miles": 8.8,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 134,
+    "total_trips": 1017,
+    "total_revenue": 49426.23,
+    "avg_fare": 42.06,
+    "avg_distance_miles": 6.1,
+    "avg_tip": 3.22,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 218,
+    "total_trips": 980,
+    "total_revenue": 39977.96,
+    "avg_fare": 37.48,
+    "avg_distance_miles": 10.21,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 241,
+    "total_trips": 935,
+    "total_revenue": 34641.38,
+    "avg_fare": 34.09,
+    "avg_distance_miles": 8.16,
+    "avg_tip": 0.12,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 220,
+    "total_trips": 929,
+    "total_revenue": 35092.02,
+    "avg_fare": 33.13,
+    "avg_distance_miles": 7.81,
+    "avg_tip": 0.36,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 212,
+    "total_trips": 912,
+    "total_revenue": 31024.51,
+    "avg_fare": 29.92,
+    "avg_distance_miles": 7.27,
+    "avg_tip": 0.04,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 47,
+    "total_trips": 881,
+    "total_revenue": 30271.71,
+    "avg_fare": 31.41,
+    "avg_distance_miles": 7.37,
+    "avg_tip": 0.13,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 67,
+    "total_trips": 879,
+    "total_revenue": 41302.95,
+    "avg_fare": 39.6,
+    "avg_distance_miles": 8.45,
+    "avg_tip": 0.68,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 265,
+    "total_trips": 861,
+    "total_revenue": 82719.42,
+    "avg_fare": 81.54,
+    "avg_distance_miles": 7.22,
+    "avg_tip": 8.66,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 242,
+    "total_trips": 860,
+    "total_revenue": 31351.64,
+    "avg_fare": 32.35,
+    "avg_distance_miles": 8.4,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 250,
+    "total_trips": 856,
+    "total_revenue": 29878.47,
+    "avg_fare": 30.95,
+    "avg_distance_miles": 7.74,
+    "avg_tip": 0.06,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 174,
+    "total_trips": 846,
+    "total_revenue": 32543.77,
+    "avg_fare": 34.84,
+    "avg_distance_miles": 9.17,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 248,
+    "total_trips": 841,
+    "total_revenue": 29390.78,
+    "avg_fare": 31.07,
+    "avg_distance_miles": 7.66,
+    "avg_tip": 0.08,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 227,
+    "total_trips": 832,
+    "total_revenue": 30027.37,
+    "avg_fare": 32.7,
+    "avg_distance_miles": 7.26,
+    "avg_tip": 0.23,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 217,
+    "total_trips": 822,
+    "total_revenue": 27014.95,
+    "avg_fare": 29.29,
+    "avg_distance_miles": 5.3,
+    "avg_tip": 0.51,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 22,
+    "total_trips": 813,
+    "total_revenue": 26374.04,
+    "avg_fare": 30.2,
+    "avg_distance_miles": 6.72,
+    "avg_tip": 0.04,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 123,
+    "total_trips": 783,
+    "total_revenue": 25665.3,
+    "avg_fare": 30.43,
+    "avg_distance_miles": 187.99,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 81,
+    "total_trips": 783,
+    "total_revenue": 31527.58,
+    "avg_fare": 37.07,
+    "avg_distance_miles": 10.38,
+    "avg_tip": 0.04,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 121,
+    "total_trips": 783,
+    "total_revenue": 28670.76,
+    "avg_fare": 32.45,
+    "avg_distance_miles": 8.07,
+    "avg_tip": 0.18,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 259,
+    "total_trips": 775,
+    "total_revenue": 33040.93,
+    "avg_fare": 39.22,
+    "avg_distance_miles": 10.78,
+    "avg_tip": 0.15,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 131,
+    "total_trips": 754,
+    "total_revenue": 28650.01,
+    "avg_fare": 33.92,
+    "avg_distance_miles": 8.02,
+    "avg_tip": 0.18,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 126,
+    "total_trips": 743,
+    "total_revenue": 24697.72,
+    "avg_fare": 29.93,
+    "avg_distance_miles": 230.27,
+    "avg_tip": 0.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 60,
+    "total_trips": 740,
+    "total_revenue": 25209.95,
+    "avg_fare": 30.59,
+    "avg_distance_miles": 8.02,
+    "avg_tip": 0.02,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 160,
+    "total_trips": 730,
+    "total_revenue": 26292.22,
+    "avg_fare": 30.89,
+    "avg_distance_miles": 5.74,
+    "avg_tip": 0.75,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 208,
+    "total_trips": 714,
+    "total_revenue": 26988.27,
+    "avg_fare": 33.34,
+    "avg_distance_miles": 8.7,
+    "avg_tip": 0.27,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 136,
+    "total_trips": 689,
+    "total_revenue": 24955.92,
+    "avg_fare": 33.29,
+    "avg_distance_miles": 8.09,
+    "avg_tip": 0.08,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 173,
+    "total_trips": 679,
+    "total_revenue": 19456.53,
+    "avg_fare": 24.7,
+    "avg_distance_miles": 5.28,
+    "avg_tip": 0.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 257,
+    "total_trips": 679,
+    "total_revenue": 29479.88,
+    "avg_fare": 36.58,
+    "avg_distance_miles": 118.89,
+    "avg_tip": 0.64,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 32,
+    "total_trips": 674,
+    "total_revenue": 26043.16,
+    "avg_fare": 35.42,
+    "avg_distance_miles": 9.48,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 202,
+    "total_trips": 647,
+    "total_revenue": 25122.88,
+    "avg_fare": 33.51,
+    "avg_distance_miles": 6.39,
+    "avg_tip": 1.17,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 29,
+    "total_trips": 623,
+    "total_revenue": 24953.6,
+    "avg_fare": 37.56,
+    "avg_distance_miles": 9.42,
+    "avg_tip": 0.11,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 135,
+    "total_trips": 621,
+    "total_revenue": 22076.98,
+    "avg_fare": 31.13,
+    "avg_distance_miles": 7.54,
+    "avg_tip": 0.22,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 185,
+    "total_trips": 620,
+    "total_revenue": 23532.53,
+    "avg_fare": 34.2,
+    "avg_distance_miles": 9.26,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 102,
+    "total_trips": 613,
+    "total_revenue": 20657.47,
+    "avg_fare": 29.53,
+    "avg_distance_miles": 5.59,
+    "avg_tip": 0.42,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 124,
+    "total_trips": 599,
+    "total_revenue": 25324.34,
+    "avg_fare": 37.02,
+    "avg_distance_miles": 7.61,
+    "avg_tip": 1.41,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 21,
+    "total_trips": 595,
+    "total_revenue": 19755.09,
+    "avg_fare": 30.92,
+    "avg_distance_miles": 7.17,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 147,
+    "total_trips": 590,
+    "total_revenue": 20160.07,
+    "avg_fare": 30.25,
+    "avg_distance_miles": 188.19,
+    "avg_tip": 0.01,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 149,
+    "total_trips": 586,
+    "total_revenue": 18085.02,
+    "avg_fare": 28.66,
+    "avg_distance_miles": 6.48,
+    "avg_tip": 0.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 20,
+    "total_trips": 560,
+    "total_revenue": 19538.85,
+    "avg_fare": 31.31,
+    "avg_distance_miles": 7.53,
+    "avg_tip": 0.05,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 200,
+    "total_trips": 550,
+    "total_revenue": 24912.88,
+    "avg_fare": 39.44,
+    "avg_distance_miles": 9.71,
+    "avg_tip": 0.47,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 203,
+    "total_trips": 543,
+    "total_revenue": 26545.21,
+    "avg_fare": 44.84,
+    "avg_distance_miles": 12.13,
+    "avg_tip": 0.57,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 139,
+    "total_trips": 540,
+    "total_revenue": 23661.21,
+    "avg_fare": 40.63,
+    "avg_distance_miles": 11.16,
+    "avg_tip": 0.15,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 108,
+    "total_trips": 518,
+    "total_revenue": 20895.7,
+    "avg_fare": 38.21,
+    "avg_distance_miles": 43.64,
+    "avg_tip": 0.0,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 94,
+    "total_trips": 508,
+    "total_revenue": 18170.37,
+    "avg_fare": 32.54,
+    "avg_distance_miles": 8.03,
+    "avg_tip": 0.07,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 122,
+    "total_trips": 505,
+    "total_revenue": 19660.96,
+    "avg_fare": 35.32,
+    "avg_distance_miles": 8.83,
+    "avg_tip": 0.0,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 34,
+    "total_trips": 500,
+    "total_revenue": 20587.04,
+    "avg_fare": 35.25,
+    "avg_distance_miles": 5.24,
+    "avg_tip": 0.7,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 93,
+    "total_trips": 492,
+    "total_revenue": 36702.46,
+    "avg_fare": 61.55,
+    "avg_distance_miles": 7.58,
+    "avg_tip": 7.61,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 180,
+    "total_trips": 483,
+    "total_revenue": 16859.86,
+    "avg_fare": 30.65,
+    "avg_distance_miles": 6.44,
+    "avg_tip": 0.9,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 38,
+    "total_trips": 466,
+    "total_revenue": 23400.45,
+    "avg_fare": 45.57,
+    "avg_distance_miles": 12.51,
+    "avg_tip": 0.53,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 3,
+    "total_trips": 446,
+    "total_revenue": 16837.16,
+    "avg_fare": 34.29,
+    "avg_distance_miles": 9.46,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 54,
+    "total_trips": 425,
+    "total_revenue": 16537.98,
+    "avg_fare": 31.47,
+    "avg_distance_miles": 325.46,
+    "avg_tip": 0.65,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 19,
+    "total_trips": 407,
+    "total_revenue": 17290.59,
+    "avg_fare": 38.28,
+    "avg_distance_miles": 9.94,
+    "avg_tip": 0.32,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 190,
+    "total_trips": 379,
+    "total_revenue": 14405.0,
+    "avg_fare": 32.37,
+    "avg_distance_miles": 306.78,
+    "avg_tip": 0.97,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 53,
+    "total_trips": 360,
+    "total_revenue": 13313.22,
+    "avg_fare": 31.93,
+    "avg_distance_miles": 7.38,
+    "avg_tip": 0.85,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 171,
+    "total_trips": 354,
+    "total_revenue": 11699.8,
+    "avg_fare": 29.1,
+    "avg_distance_miles": 7.16,
+    "avg_tip": 0.12,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 16,
+    "total_trips": 336,
+    "total_revenue": 12747.91,
+    "avg_fare": 33.46,
+    "avg_distance_miles": 8.28,
+    "avg_tip": 0.16,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 183,
+    "total_trips": 334,
+    "total_revenue": 12223.76,
+    "avg_fare": 32.87,
+    "avg_distance_miles": 9.03,
+    "avg_tip": 0.13,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 150,
+    "total_trips": 307,
+    "total_revenue": 11042.65,
+    "avg_fare": 33.5,
+    "avg_distance_miles": 8.31,
+    "avg_tip": 0.03,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 201,
+    "total_trips": 304,
+    "total_revenue": 15021.96,
+    "avg_fare": 46.46,
+    "avg_distance_miles": 12.66,
+    "avg_tip": 0.08,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 11,
+    "total_trips": 291,
+    "total_revenue": 9794.7,
+    "avg_fare": 31.25,
+    "avg_distance_miles": 7.55,
+    "avg_tip": 0.15,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 192,
+    "total_trips": 288,
+    "total_revenue": 9678.75,
+    "avg_fare": 29.93,
+    "avg_distance_miles": 7.11,
+    "avg_tip": 0.28,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 178,
+    "total_trips": 278,
+    "total_revenue": 9182.47,
+    "avg_fare": 30.56,
+    "avg_distance_miles": 5.84,
+    "avg_tip": 0.14,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 252,
+    "total_trips": 269,
+    "total_revenue": 10058.28,
+    "avg_fare": 32.66,
+    "avg_distance_miles": 7.96,
+    "avg_tip": 0.18,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 101,
+    "total_trips": 261,
+    "total_revenue": 12258.39,
+    "avg_fare": 41.7,
+    "avg_distance_miles": 11.18,
+    "avg_tip": 0.3,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 153,
+    "total_trips": 259,
+    "total_revenue": 8565.46,
+    "avg_fare": 30.34,
+    "avg_distance_miles": 7.37,
+    "avg_tip": 0.09,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 98,
+    "total_trips": 245,
+    "total_revenue": 8453.05,
+    "avg_fare": 30.96,
+    "avg_distance_miles": 7.97,
+    "avg_tip": 0.1,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 207,
+    "total_trips": 210,
+    "total_revenue": 15229.17,
+    "avg_fare": 57.15,
+    "avg_distance_miles": 5.3,
+    "avg_tip": 9.79,
+    "active_days": 30
+  },
+  {
+    "pickup_location_id": 175,
+    "total_trips": 204,
+    "total_revenue": 8246.63,
+    "avg_fare": 36.17,
+    "avg_distance_miles": 9.72,
+    "avg_tip": 0.44,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 128,
+    "total_trips": 194,
+    "total_revenue": 7650.3,
+    "avg_fare": 34.61,
+    "avg_distance_miles": 8.56,
+    "avg_tip": 0.47,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 1,
+    "total_trips": 186,
+    "total_revenue": 20675.55,
+    "avg_fare": 92.08,
+    "avg_distance_miles": 4.07,
+    "avg_tip": 12.39,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 9,
+    "total_trips": 185,
+    "total_revenue": 6478.78,
+    "avg_fare": 29.84,
+    "avg_distance_miles": 7.65,
+    "avg_tip": 0.4,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 15,
+    "total_trips": 184,
+    "total_revenue": 7713.73,
+    "avg_fare": 35.65,
+    "avg_distance_miles": 8.86,
+    "avg_tip": 0.27,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 73,
+    "total_trips": 156,
+    "total_revenue": 4925.3,
+    "avg_fare": 27.63,
+    "avg_distance_miles": 6.91,
+    "avg_tip": 0.18,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 194,
+    "total_trips": 150,
+    "total_revenue": 10000.44,
+    "avg_fare": 51.47,
+    "avg_distance_miles": 6.31,
+    "avg_tip": 6.46,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 240,
+    "total_trips": 145,
+    "total_revenue": 5679.04,
+    "avg_fare": 36.29,
+    "avg_distance_miles": 9.45,
+    "avg_tip": 0.12,
+    "active_days": 31
+  },
+  {
+    "pickup_location_id": 64,
+    "total_trips": 142,
+    "total_revenue": 5550.34,
+    "avg_fare": 33.59,
+    "avg_distance_miles": 8.43,
+    "avg_tip": 0.54,
+    "active_days": 29
+  },
+  {
+    "pickup_location_id": 120,
+    "total_trips": 106,
+    "total_revenue": 3897.52,
+    "avg_fare": 31.73,
+    "avg_distance_miles": 7.31,
+    "avg_tip": 0.7,
+    "active_days": 30
+  },
+  {
+    "pickup_location_id": 31,
+    "total_trips": 101,
+    "total_revenue": 4477.53,
+    "avg_fare": 37.47,
+    "avg_distance_miles": 8.94,
+    "avg_tip": 1.31,
+    "active_days": 27
+  },
+  {
+    "pickup_location_id": 6,
+    "total_trips": 95,
+    "total_revenue": 3563.96,
+    "avg_fare": 25.41,
+    "avg_distance_miles": 7.63,
+    "avg_tip": 0.24,
+    "active_days": 28
+  },
+  {
+    "pickup_location_id": 221,
+    "total_trips": 74,
+    "total_revenue": 3229.63,
+    "avg_fare": 35.21,
+    "avg_distance_miles": 7.29,
+    "avg_tip": 0.78,
+    "active_days": 28
+  },
+  {
+    "pickup_location_id": 58,
+    "total_trips": 73,
+    "total_revenue": 3004.6,
+    "avg_fare": 35.53,
+    "avg_distance_miles": 9.14,
+    "avg_tip": 0.14,
+    "active_days": 27
+  },
+  {
+    "pickup_location_id": 57,
+    "total_trips": 70,
+    "total_revenue": 2134.23,
+    "avg_fare": 26.65,
+    "avg_distance_miles": 6.4,
+    "avg_tip": 0.25,
+    "active_days": 25
+  },
+  {
+    "pickup_location_id": 96,
+    "total_trips": 65,
+    "total_revenue": 2690.98,
+    "avg_fare": 36.73,
+    "avg_distance_miles": 7.74,
+    "avg_tip": 0.5,
+    "active_days": 29
+  },
+  {
+    "pickup_location_id": 46,
+    "total_trips": 49,
+    "total_revenue": 2482.46,
+    "avg_fare": 46.17,
+    "avg_distance_miles": 12.14,
+    "avg_tip": 0.1,
+    "active_days": 24
+  },
+  {
+    "pickup_location_id": 154,
+    "total_trips": 48,
+    "total_revenue": 1986.72,
+    "avg_fare": 35.21,
+    "avg_distance_miles": 7.65,
+    "avg_tip": 3.63,
+    "active_days": 25
+  },
+  {
+    "pickup_location_id": 184,
+    "total_trips": 44,
+    "total_revenue": 2492.31,
+    "avg_fare": 49.91,
+    "avg_distance_miles": 11.69,
+    "avg_tip": 2.46,
+    "active_days": 22
+  },
+  {
+    "pickup_location_id": 214,
+    "total_trips": 41,
+    "total_revenue": 1956.04,
+    "avg_fare": 34.44,
+    "avg_distance_miles": 9.91,
+    "avg_tip": 0.2,
+    "active_days": 21
+  },
+  {
+    "pickup_location_id": 8,
+    "total_trips": 36,
+    "total_revenue": 2099.29,
+    "avg_fare": 46.79,
+    "avg_distance_miles": 5.08,
+    "avg_tip": 4.21,
+    "active_days": 21
+  },
+  {
+    "pickup_location_id": 23,
+    "total_trips": 34,
+    "total_revenue": 1772.27,
+    "avg_fare": 45.13,
+    "avg_distance_miles": 10.53,
+    "avg_tip": 0.14,
+    "active_days": 22
+  },
+  {
+    "pickup_location_id": 115,
+    "total_trips": 32,
+    "total_revenue": 2148.22,
+    "avg_fare": 55.16,
+    "avg_distance_miles": 10.64,
+    "avg_tip": 0.0,
+    "active_days": 18
+  },
+  {
+    "pickup_location_id": 59,
+    "total_trips": 32,
+    "total_revenue": 1090.18,
+    "avg_fare": 30.07,
+    "avg_distance_miles": 7.1,
+    "avg_tip": 0.0,
+    "active_days": 19
+  },
+  {
+    "pickup_location_id": 251,
+    "total_trips": 29,
+    "total_revenue": 1854.06,
+    "avg_fare": 50.35,
+    "avg_distance_miles": 12.28,
+    "avg_tip": 0.65,
+    "active_days": 19
+  },
+  {
+    "pickup_location_id": 172,
+    "total_trips": 26,
+    "total_revenue": 1041.84,
+    "avg_fare": 29.25,
+    "avg_distance_miles": 7.45,
+    "avg_tip": 0.23,
+    "active_days": 18
+  },
+  {
+    "pickup_location_id": 118,
+    "total_trips": 24,
+    "total_revenue": 1621.13,
+    "avg_fare": 56.59,
+    "avg_distance_miles": 11.26,
+    "avg_tip": 0.0,
+    "active_days": 16
+  },
+  {
+    "pickup_location_id": 156,
+    "total_trips": 19,
+    "total_revenue": 869.79,
+    "avg_fare": 38.02,
+    "avg_distance_miles": 10.52,
+    "avg_tip": 1.1,
+    "active_days": 14
+  },
+  {
+    "pickup_location_id": 30,
+    "total_trips": 17,
+    "total_revenue": 739.23,
+    "avg_fare": 39.79,
+    "avg_distance_miles": 9.01,
+    "avg_tip": 0.0,
+    "active_days": 13
+  },
+  {
+    "pickup_location_id": 253,
+    "total_trips": 15,
+    "total_revenue": 675.13,
+    "avg_fare": 38.95,
+    "avg_distance_miles": 8.12,
+    "avg_tip": 0.0,
+    "active_days": 11
+  },
+  {
+    "pickup_location_id": 245,
+    "total_trips": 13,
+    "total_revenue": 904.29,
+    "avg_fare": 62.14,
+    "avg_distance_miles": 11.15,
+    "avg_tip": 0.0,
+    "active_days": 10
+  },
+  {
+    "pickup_location_id": 27,
+    "total_trips": 13,
+    "total_revenue": 640.56,
+    "avg_fare": 42.39,
+    "avg_distance_miles": 12.79,
+    "avg_tip": 1.32,
+    "active_days": 12
+  },
+  {
+    "pickup_location_id": 176,
+    "total_trips": 13,
+    "total_revenue": 799.79,
+    "avg_fare": 53.95,
+    "avg_distance_miles": 9.64,
+    "avg_tip": 0.48,
+    "active_days": 12
+  },
+  {
+    "pickup_location_id": 206,
+    "total_trips": 9,
+    "total_revenue": 487.92,
+    "avg_fare": 42.7,
+    "avg_distance_miles": 10.38,
+    "avg_tip": 0.22,
+    "active_days": 7
+  },
+  {
+    "pickup_location_id": 187,
+    "total_trips": 8,
+    "total_revenue": 557.21,
+    "avg_fare": 56.09,
+    "avg_distance_miles": 11.81,
+    "avg_tip": 0.0,
+    "active_days": 7
+  },
+  {
+    "pickup_location_id": 109,
+    "total_trips": 6,
+    "total_revenue": 417.45,
+    "avg_fare": 58.43,
+    "avg_distance_miles": 15.87,
+    "avg_tip": 0.0,
+    "active_days": 6
+  },
+  {
+    "pickup_location_id": 111,
+    "total_trips": 5,
+    "total_revenue": 234.99,
+    "avg_fare": 36.26,
+    "avg_distance_miles": 5.87,
+    "avg_tip": 2.62,
+    "active_days": 4
+  },
+  {
+    "pickup_location_id": 2,
+    "total_trips": 5,
+    "total_revenue": 507.09,
+    "avg_fare": 88.39,
+    "avg_distance_miles": 7.51,
+    "avg_tip": 2.91,
+    "active_days": 5
+  },
+  {
+    "pickup_location_id": 84,
+    "total_trips": 3,
+    "total_revenue": 218.73,
+    "avg_fare": 60.49,
+    "avg_distance_miles": 20.42,
+    "avg_tip": 0.0,
+    "active_days": 3
+  },
+  {
+    "pickup_location_id": 105,
+    "total_trips": 2,
+    "total_revenue": 101.65,
+    "avg_fare": 28.9,
+    "avg_distance_miles": 10.4,
+    "avg_tip": 9.31,
+    "active_days": 2
+  },
+  {
+    "pickup_location_id": 5,
+    "total_trips": 2,
+    "total_revenue": 188.15,
+    "avg_fare": 68.88,
+    "avg_distance_miles": 20.69,
+    "avg_tip": 5.06,
+    "active_days": 2
+  },
+  {
+    "pickup_location_id": 204,
+    "total_trips": 2,
+    "total_revenue": 136.4,
+    "avg_fare": 48.47,
+    "avg_distance_miles": 18.41,
+    "avg_tip": 0.0,
+    "active_days": 2
+  }
+]

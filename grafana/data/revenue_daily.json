@@ -1,0 +1,290 @@
+[
+  {
+    "trip_date": "2025-11-30",
+    "total_trips": 9,
+    "total_fare": 266.2,
+    "total_tips": 26.51,
+    "total_revenue": 349.65,
+    "avg_distance_miles": 6.66,
+    "avg_passengers": 1.22
+  },
+  {
+    "trip_date": "2025-12-01",
+    "total_trips": 119706,
+    "total_fare": 2736422.23,
+    "total_tips": 402434.42,
+    "total_revenue": 3898078.94,
+    "avg_distance_miles": 4.98,
+    "avg_passengers": 1.22
+  },
+  {
+    "trip_date": "2025-12-02",
+    "total_trips": 139500,
+    "total_fare": 3160562.35,
+    "total_tips": 451925.82,
+    "total_revenue": 4481095.32,
+    "avg_distance_miles": 4.66,
+    "avg_passengers": 1.2
+  },
+  {
+    "trip_date": "2025-12-03",
+    "total_trips": 143973,
+    "total_fare": 3319621.04,
+    "total_tips": 481960.56,
+    "total_revenue": 4693635.97,
+    "avg_distance_miles": 5.09,
+    "avg_passengers": 1.21
+  },
+  {
+    "trip_date": "2025-12-04",
+    "total_trips": 163245,
+    "total_fare": 3851521.48,
+    "total_tips": 542745.82,
+    "total_revenue": 5421821.52,
+    "avg_distance_miles": 5.85,
+    "avg_passengers": 1.23
+  },
+  {
+    "trip_date": "2025-12-05",
+    "total_trips": 161286,
+    "total_fare": 3585067.29,
+    "total_tips": 490430.67,
+    "total_revenue": 5063542.9,
+    "avg_distance_miles": 7.08,
+    "avg_passengers": 1.29
+  },
+  {
+    "trip_date": "2025-12-06",
+    "total_trips": 164833,
+    "total_fare": 3513073.0,
+    "total_tips": 432472.76,
+    "total_revenue": 4851748.45,
+    "avg_distance_miles": 7.25,
+    "avg_passengers": 1.39
+  },
+  {
+    "trip_date": "2025-12-07",
+    "total_trips": 137857,
+    "total_fare": 3029401.04,
+    "total_tips": 388391.56,
+    "total_revenue": 4207260.72,
+    "avg_distance_miles": 11.02,
+    "avg_passengers": 1.37
+  },
+  {
+    "trip_date": "2025-12-08",
+    "total_trips": 136975,
+    "total_fare": 3007010.07,
+    "total_tips": 442052.03,
+    "total_revenue": 4304399.51,
+    "avg_distance_miles": 8.4,
+    "avg_passengers": 1.23
+  },
+  {
+    "trip_date": "2025-12-09",
+    "total_trips": 151507,
+    "total_fare": 3481931.33,
+    "total_tips": 490052.63,
+    "total_revenue": 4909907.93,
+    "avg_distance_miles": 6.45,
+    "avg_passengers": 1.2
+  },
+  {
+    "trip_date": "2025-12-10",
+    "total_trips": 156392,
+    "total_fare": 3777963.89,
+    "total_tips": 513046.01,
+    "total_revenue": 5268083.7,
+    "avg_distance_miles": 4.79,
+    "avg_passengers": 1.2
+  },
+  {
+    "trip_date": "2025-12-11",
+    "total_trips": 172318,
+    "total_fare": 4152026.69,
+    "total_tips": 546438.75,
+    "total_revenue": 5769621.53,
+    "avg_distance_miles": 8.37,
+    "avg_passengers": 1.22
+  },
+  {
+    "trip_date": "2025-12-12",
+    "total_trips": 171785,
+    "total_fare": 3973771.36,
+    "total_tips": 518553.07,
+    "total_revenue": 5555465.55,
+    "avg_distance_miles": 7.69,
+    "avg_passengers": 1.28
+  },
+  {
+    "trip_date": "2025-12-13",
+    "total_trips": 176815,
+    "total_fare": 3910975.12,
+    "total_tips": 438991.92,
+    "total_revenue": 5321662.45,
+    "avg_distance_miles": 7.14,
+    "avg_passengers": 1.39
+  },
+  {
+    "trip_date": "2025-12-14",
+    "total_trips": 156392,
+    "total_fare": 3512776.92,
+    "total_tips": 354425.88,
+    "total_revenue": 4742452.72,
+    "avg_distance_miles": 6.72,
+    "avg_passengers": 1.37
+  },
+  {
+    "trip_date": "2025-12-15",
+    "total_trips": 141566,
+    "total_fare": 3331252.71,
+    "total_tips": 429570.78,
+    "total_revenue": 4646797.51,
+    "avg_distance_miles": 8.46,
+    "avg_passengers": 1.24
+  },
+  {
+    "trip_date": "2025-12-16",
+    "total_trips": 149338,
+    "total_fare": 3403270.87,
+    "total_tips": 444751.97,
+    "total_revenue": 4761295.81,
+    "avg_distance_miles": 5.71,
+    "avg_passengers": 1.22
+  },
+  {
+    "trip_date": "2025-12-17",
+    "total_trips": 151073,
+    "total_fare": 3447311.0,
+    "total_tips": 455320.85,
+    "total_revenue": 4823644.54,
+    "avg_distance_miles": 7.14,
+    "avg_passengers": 1.22
+  },
+  {
+    "trip_date": "2025-12-18",
+    "total_trips": 156948,
+    "total_fare": 3683734.79,
+    "total_tips": 477963.88,
+    "total_revenue": 5124464.36,
+    "avg_distance_miles": 6.3,
+    "avg_passengers": 1.24
+  },
+  {
+    "trip_date": "2025-12-19",
+    "total_trips": 160500,
+    "total_fare": 3607516.72,
+    "total_tips": 438377.71,
+    "total_revenue": 5010992.09,
+    "avg_distance_miles": 8.37,
+    "avg_passengers": 1.31
+  },
+  {
+    "trip_date": "2025-12-20",
+    "total_trips": 153171,
+    "total_fare": 3301459.21,
+    "total_tips": 390496.78,
+    "total_revenue": 4548804.57,
+    "avg_distance_miles": 7.2,
+    "avg_passengers": 1.43
+  },
+  {
+    "trip_date": "2025-12-21",
+    "total_trips": 121233,
+    "total_fare": 2589181.22,
+    "total_tips": 306182.76,
+    "total_revenue": 3567382.03,
+    "avg_distance_miles": 9.08,
+    "avg_passengers": 1.45
+  },
+  {
+    "trip_date": "2025-12-22",
+    "total_trips": 107391,
+    "total_fare": 2337181.55,
+    "total_tips": 304709.22,
+    "total_revenue": 3279237.61,
+    "avg_distance_miles": 7.85,
+    "avg_passengers": 1.35
+  },
+  {
+    "trip_date": "2025-12-23",
+    "total_trips": 105884,
+    "total_fare": 2256903.19,
+    "total_tips": 286575.03,
+    "total_revenue": 3167990.23,
+    "avg_distance_miles": 7.22,
+    "avg_passengers": 1.34
+  },
+  {
+    "trip_date": "2025-12-24",
+    "total_trips": 92870,
+    "total_fare": 1796001.51,
+    "total_tips": 218758.83,
+    "total_revenue": 2545718.82,
+    "avg_distance_miles": 6.03,
+    "avg_passengers": 1.41
+  },
+  {
+    "trip_date": "2025-12-25",
+    "total_trips": 65996,
+    "total_fare": 1444209.57,
+    "total_tips": 152750.98,
+    "total_revenue": 1962475.54,
+    "avg_distance_miles": 12.19,
+    "avg_passengers": 1.53
+  },
+  {
+    "trip_date": "2025-12-26",
+    "total_trips": 79025,
+    "total_fare": 1634240.92,
+    "total_tips": 211381.61,
+    "total_revenue": 2321676.79,
+    "avg_distance_miles": 3.52,
+    "avg_passengers": 1.46
+  },
+  {
+    "trip_date": "2025-12-27",
+    "total_trips": 83113,
+    "total_fare": 1852060.87,
+    "total_tips": 232890.2,
+    "total_revenue": 2562640.04,
+    "avg_distance_miles": 6.58,
+    "avg_passengers": 1.55
+  },
+  {
+    "trip_date": "2025-12-28",
+    "total_trips": 88256,
+    "total_fare": 2064840.2,
+    "total_tips": 268983.43,
+    "total_revenue": 2847739.33,
+    "avg_distance_miles": 4.31,
+    "avg_passengers": 1.49
+  },
+  {
+    "trip_date": "2025-12-29",
+    "total_trips": 92187,
+    "total_fare": 2040902.49,
+    "total_tips": 282618.73,
+    "total_revenue": 2891599.32,
+    "avg_distance_miles": 6.78,
+    "avg_passengers": 1.43
+  },
+  {
+    "trip_date": "2025-12-30",
+    "total_trips": 100278,
+    "total_fare": 2172161.49,
+    "total_tips": 300490.19,
+    "total_revenue": 3085239.26,
+    "avg_distance_miles": 8.48,
+    "avg_passengers": 1.4
+  },
+  {
+    "trip_date": "2025-12-31",
+    "total_trips": 104336,
+    "total_fare": 2169409.91,
+    "total_tips": 250560.53,
+    "total_revenue": 3034854.7,
+    "avg_distance_miles": 12.48,
+    "avg_passengers": 1.39
+  }
+]

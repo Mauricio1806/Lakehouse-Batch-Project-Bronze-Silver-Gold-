@@ -73,7 +73,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -124,7 +124,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -175,7 +175,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -226,7 +226,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -277,7 +277,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "timeseries",
@@ -292,7 +292,7 @@
         },
         {
           "refId": "B",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "timeseries",
@@ -307,7 +307,7 @@
         },
         {
           "refId": "C",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "timeseries",
@@ -387,7 +387,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/trips_by_hour.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -459,7 +459,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/payment_breakdown.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -506,7 +506,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/payment_breakdown.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -576,7 +576,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/trips_by_location.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
@@ -651,7 +651,7 @@
       "targets": [
         {
           "refId": "A",
-          "type": "url",
+          "type": "json",
           "url": "http://nginx/revenue_daily.json",
           "url_options": { "method": "GET", "data": "" },
           "format": "table",
