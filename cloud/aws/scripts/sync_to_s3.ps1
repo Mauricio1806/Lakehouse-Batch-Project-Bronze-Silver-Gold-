@@ -8,9 +8,9 @@
 #>
 
 param(
-    [Parameter(Mandatory=$true)]  [string]$Bucket,
+    [Parameter(Mandatory=$false)] [string]$Bucket  = "1lakehousebatch",
     [Parameter(Mandatory=$false)] [string]$Profile = "default",
-    [Parameter(Mandatory=$false)] [string]$Region  = "us-east-2",
+    [Parameter(Mandatory=$false)] [string]$Region  = "us-east-1",
     [switch]$DryRun
 )
 

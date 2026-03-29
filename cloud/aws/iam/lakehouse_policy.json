@@ -11,8 +11,8 @@
         "s3:ListBucket"
       ],
       "Resource": [
-        "arn:aws:s3:::<YOUR_BUCKET>",
-        "arn:aws:s3:::<YOUR_BUCKET>/lakehouse/*"
+        "arn:aws:s3:::1lakehousebatch",
+        "arn:aws:s3:::1lakehousebatch/*"
       ]
     },
     {
@@ -26,7 +26,7 @@
         "athena:GetWorkGroup"
       ],
       "Resource": [
-        "arn:aws:athena:us-east-2:*:workgroup/primary"
+        "arn:aws:athena:us-east-1:*:workgroup/primary"
       ]
     },
     {

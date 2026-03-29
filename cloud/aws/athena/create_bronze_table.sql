@@ -1,6 +1,6 @@
 -- Athena external table over the Bronze S3 layer.
 -- Replace <YOUR_BUCKET> with your actual S3 bucket name.
--- Region: us-east-2  |  Format: Parquet + Snappy
+-- Region: us-east-1  |  Format: Parquet + Snappy
 
 CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.bronze_trips (
     VendorID              BIGINT,
@@ -29,7 +29,7 @@ PARTITIONED BY (
     month   STRING
 )
 STORED AS PARQUET
-LOCATION 's3://<YOUR_BUCKET>/lakehouse/bronze/'
+LOCATION 's3://1lakehousebatch/lakehouse/bronze/'
 TBLPROPERTIES ('parquet.compress' = 'SNAPPY');
 
 -- After creating, run to load partitions:

@@ -1,6 +1,6 @@
 -- Athena external table over the Silver S3 layer.
 -- Replace <YOUR_BUCKET> with your actual S3 bucket name.
--- Region: us-east-2  |  Format: Parquet + Snappy
+-- Region: us-east-1  |  Format: Parquet + Snappy
 
 CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.silver_trips (
     pickup_datetime     TIMESTAMP,
@@ -15,5 +15,5 @@ CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.silver_trips (
     payment_type        INT
 )
 STORED AS PARQUET
-LOCATION 's3://<YOUR_BUCKET>/lakehouse/silver/'
+LOCATION 's3://1lakehousebatch/lakehouse/silver/'
 TBLPROPERTIES ('parquet.compress' = 'SNAPPY');

@@ -9,9 +9,9 @@ TLC_DATASET = os.getenv("TLC_DATASET", "yellow")
 
 TLC_BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data"
 
-# ── AWS settings (Free-Tier safe, us-east-2) ──────────────────────────────
-AWS_REGION     = os.getenv("AWS_REGION",     "us-east-2")
-S3_BUCKET      = os.getenv("S3_BUCKET",      "your-lakehouse-bucket")
+# ── AWS settings ─────────────────────────────────────────────────────────
+AWS_REGION     = os.getenv("AWS_REGION",     "us-east-1")
+S3_BUCKET      = os.getenv("S3_BUCKET",      "1lakehousebatch")
 S3_PREFIX      = os.getenv("S3_PREFIX",      "lakehouse")
 
 # ── DuckDB ────────────────────────────────────────────────────────────────

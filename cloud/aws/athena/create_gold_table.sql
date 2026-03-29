@@ -1,6 +1,6 @@
 -- Athena external table over the Gold S3 layer.
 -- Replace <YOUR_BUCKET> with your actual S3 bucket name.
--- Region: us-east-2  |  Format: Parquet + Snappy
+-- Region: us-east-1  |  Format: Parquet + Snappy
 
 CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.mart_revenue_daily (
     trip_date           DATE,
@@ -12,5 +12,5 @@ CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.mart_revenue_daily (
     avg_passengers      DOUBLE
 )
 STORED AS PARQUET
-LOCATION 's3://<YOUR_BUCKET>/lakehouse/gold/'
+LOCATION 's3://1lakehousebatch/lakehouse/gold/'
 TBLPROPERTIES ('parquet.compress' = 'SNAPPY');
