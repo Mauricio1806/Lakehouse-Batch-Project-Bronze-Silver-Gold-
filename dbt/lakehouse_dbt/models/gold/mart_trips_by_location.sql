@@ -1,7 +1,7 @@
 {{
     config(
         materialized = 'external',
-        location     = '../../data/gold/mart_trips_by_location.parquet',
+        location     = '/opt/airflow/data/gold/mart_trips_by_location.parquet',
         format       = 'parquet',
         options      = {'codec': 'snappy'}
     )

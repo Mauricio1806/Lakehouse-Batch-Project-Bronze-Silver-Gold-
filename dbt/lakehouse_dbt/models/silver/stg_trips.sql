@@ -1,7 +1,7 @@
 {{
     config(
         materialized  = 'external',
-        location      = '../../data/silver/stg_trips.parquet',
+        location      = '/opt/airflow/data/silver/stg_trips.parquet',
         format        = 'parquet',
         options       = {'codec': 'snappy'}
     )
@@ -9,7 +9,7 @@
 
 WITH source AS (
     SELECT *
-    FROM read_parquet('../../data/bronze/**/*.parquet')
+    FROM read_parquet('/opt/airflow/data/bronze/**/*.parquet')
 ),
 
 deduped AS (

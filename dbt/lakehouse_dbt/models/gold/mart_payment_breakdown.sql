@@ -1,7 +1,7 @@
 {{
     config(
         materialized = 'external',
-        location     = '../../data/gold/mart_payment_breakdown.parquet',
+        location     = '/opt/airflow/data/gold/mart_payment_breakdown.parquet',
         format       = 'parquet',
         options      = {'codec': 'snappy'}
     )
