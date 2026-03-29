@@ -176,6 +176,9 @@ lakehouse-b2s2g/
         └── setup_athena.ps1
 ```
 
----
+## 👨‍💻 Author
 
-*NYC TLC Lakehouse · DuckDB · Airflow 2.9.3 · dbt-duckdb 1.8.3 · Grafana 10.4.2 · S3 · Athena · us-east-1*
+**Mauricio Esquivel**
+Data Engineer | Analytics Engineer
+
+Focus: Lakehouse Architecture, Orchestration, Cloud Data Platforms
