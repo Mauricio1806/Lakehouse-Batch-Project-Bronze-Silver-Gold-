@@ -1,0 +1,11 @@
+# Copy this file to ~/.dbt/profiles.yml (or set DBT_PROFILES_DIR=dbt/lakehouse_dbt)
+# and adjust the path to lakehouse.duckdb.
+lakehouse_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('LAKEHOUSE_DB_PATH', '../../data/lakehouse.duckdb') }}"
+      threads: 4
+      extensions:
+        - parquet

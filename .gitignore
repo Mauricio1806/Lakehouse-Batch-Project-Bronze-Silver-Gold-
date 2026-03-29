@@ -1,9 +1,13 @@
-# data outputs
+# data outputs (generated at runtime — never commit)
+data/raw/
 data/bronze/
 data/silver/
 data/gold/
 data/*.duckdb
 *.parquet
+
+# dbt profiles (may contain local paths; use profiles.yml.example instead)
+dbt/**/profiles.yml
 
 # python
 __pycache__/

@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: stg_trips
+    description: "Cleaned and deduplicated NYC TLC yellow-taxi trips (Silver layer)"
+    columns:
+      - name: pickup_datetime
+        description: "Timestamp when meter was engaged"
+        tests:
+          - not_null
+      - name: dropoff_datetime
+        description: "Timestamp when meter was disengaged"
+        tests:
+          - not_null
+      - name: fare_amount
+        description: "Meter fare; must be positive"
+        tests:
+          - not_null
+      - name: total_amount
+        description: "Total charged to passenger"
+        tests:
+          - not_null
+      - name: trip_distance
+        description: "Trip distance in miles; must be positive"
+        tests:
+          - not_null
+
+  - name: mart_revenue_daily
+    description: "Daily revenue and trip aggregates (Gold layer)"
+    columns:
+      - name: trip_date
+        description: "Calendar date of the trips"
+        tests:
+          - not_null
+          - unique
+      - name: total_trips
+        description: "Number of trips on that day"
+        tests:
+          - not_null
+      - name: total_revenue
+        description: "Sum of total_amount for all trips on that day"
+        tests:
+          - not_null

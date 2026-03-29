@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import os
 from pathlib import Path
@@ -9,7 +9,7 @@ MONTH = os.getenv("TLC_MONTH", "12")
 DATASET = os.getenv("TLC_DATASET", "yellow")
 
 RAW_FILE = Path("data") / "raw" / f"{DATASET}_tripdata_{YEAR}-{MONTH}.parquet"
-BRONZE_DIR = Path("data_bronze") / f"dataset={DATASET}" / f"year={YEAR}" / f"month={MONTH}"
+BRONZE_DIR = Path("data") / "bronze" / f"dataset={DATASET}" / f"year={YEAR}" / f"month={MONTH}"
 BRONZE_DIR.mkdir(parents=True, exist_ok=True)
 
 def main() -> None:
@@ -19,18 +19,15 @@ def main() -> None:
     out_file = BRONZE_DIR / "trips.parquet"
 
     con = duckdb.connect(database="data/lakehouse.duckdb")
-    con.execute("INSTALL parquet; LOAD parquet;")
 
-    # Write raw parquet into bronze (kept as parquet, partitioned by folders)
-    con.execute(
-        f\"\"\"
-        COPY (
-            SELECT * FROM read_parquet('{RAW_FILE.as_posix()}')
-        )
-        TO '{out_file.as_posix()}'
-        (FORMAT PARQUET, CODEC 'SNAPPY');
-        \"\"\"
+    sql = (
+        "COPY ("
+        f" SELECT * FROM read_parquet('{RAW_FILE.as_posix()}')"
+        " ) "
+        f"TO '{out_file.as_posix()}'"
+        " (FORMAT PARQUET, CODEC 'SNAPPY')"
     )
+    con.execute(sql)
     con.close()
 
     print(f"[tlc_to_bronze] Bronze written: {out_file}")

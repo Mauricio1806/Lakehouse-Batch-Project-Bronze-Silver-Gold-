@@ -8,14 +8,13 @@ YEAR = os.getenv("TLC_YEAR", "2025")
 MONTH = os.getenv("TLC_MONTH", "12")
 DATASET = os.getenv("TLC_DATASET", "yellow")
 
-BRONZE_FILE = Path("data_bronze") / f"dataset={DATASET}" / f"year={YEAR}" / f"month={MONTH}" / "trips.parquet"
+BRONZE_FILE = Path("data") / "bronze" / f"dataset={DATASET}" / f"year={YEAR}" / f"month={MONTH}" / "trips.parquet"
 
 def main() -> None:
     if not BRONZE_FILE.exists():
         raise FileNotFoundError(f"Bronze file not found: {BRONZE_FILE}")
 
     con = duckdb.connect(database="data/lakehouse.duckdb")
-    con.execute("INSTALL parquet; LOAD parquet;")
 
     # Minimal quality checks (fast, production-like gate)
     row_count = con.execute(f"SELECT COUNT(*) FROM read_parquet('{BRONZE_FILE.as_posix()}')").fetchone()[0]
