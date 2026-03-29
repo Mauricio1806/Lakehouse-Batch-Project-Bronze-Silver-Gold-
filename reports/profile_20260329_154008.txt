@@ -1,0 +1,91 @@
+============================================================
+  NYC TLC LAKEHOUSE — DATA PROFILE
+  Generated : 2026-03-29 15:40 UTC
+  DuckDB DB : /opt/airflow/data/lakehouse.duckdb
+============================================================
+
+────────────────────────────────────────────────────────────  BRONZE  (raw ingested)
+
+  Row count   : 4,305,006
+  Columns     : 23
+  Column list : VendorID, tpep_pickup_datetime, tpep_dropoff_datetime, passenger_count, trip_distance, RatecodeID, store_and_fwd_flag, PULocationID, DOLocationID, payment_type, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge, total_amount, congestion_surcharge, Airport_fee, cbd_congestion_fee, dataset, month, year
+  [VendorID                    ]  min=1  max=7  avg=1.8792  nulls=0 (0.0%)
+  [passenger_count             ]  min=0  max=9  avg=1.3138  nulls=1195482 (27.77%)
+  [trip_distance               ]  min=0.0  max=322576.17  avg=6.9412  nulls=0 (0.0%)
+  [RatecodeID                  ]  min=1  max=99  avg=4.7952  nulls=1195482 (27.77%)
+  [PULocationID                ]  min=1  max=265  avg=161.7788  nulls=0 (0.0%)
+  [DOLocationID                ]  min=1  max=265  avg=161.1376  nulls=0 (0.0%)
+  Partitions  :
+    dataset=yellow  year=2025  month=12  rows=4,305,006
+
+────────────────────────────────────────────────────────────  SILVER  (stg_trips)
+
+  Row count   : 4,105,758
+  Columns     : 10
+  Column list : pickup_datetime, dropoff_datetime, passenger_count, trip_distance, pickup_location_id, dropoff_location_id, fare_amount, tip_amount, total_amount, payment_type
+  [passenger_count             ]  min=0  max=9  avg=1.3099  nulls=1085393 (26.44%)
+  [trip_distance               ]  min=0.01  max=322576.17  avg=7.1505  nulls=0 (0.0%)
+  [pickup_location_id          ]  min=1  max=265  avg=162.0074  nulls=0 (0.0%)
+  [dropoff_location_id         ]  min=1  max=265  avg=161.3302  nulls=0 (0.0%)
+  [fare_amount                 ]  min=0.01  max=2157.6  avg=22.4426  nulls=0 (0.0%)
+  [tip_amount                  ]  min=0.0  max=600.0  avg=2.9097  nulls=0 (0.0%)
+  Date range  : 2025-11-30 → 2025-12-31  (32 days)
+
+────────────────────────────────────────────────────────────  GOLD  (mart_revenue_daily)
+
+  Row count   : 32
+  Columns     : 7
+  Column list : trip_date, total_trips, total_fare, total_tips, total_revenue, avg_distance_miles, avg_passengers
+  [total_trips                 ]  min=9  max=176815  avg=128304.9375  nulls=0 (0.0%)
+  [total_fare                  ]  min=266.2  max=4152026.69  avg=2879500.8822  nulls=0 (0.0%)
+  [total_tips                  ]  min=26.51  max=546438.75  avg=373322.8716  nulls=0 (0.0%)
+  [total_revenue               ]  min=349.65  max=5769621.53  avg=4020989.9816  nulls=0 (0.0%)
+  [avg_distance_miles          ]  min=3.5213  max=12.485  avg=7.1817  nulls=0 (0.0%)
+  [avg_passengers              ]  min=1.2  max=1.55  avg=1.3275  nulls=0 (0.0%)
+
+────────────────────────────────────────────────────────────  GOLD  (mart_trips_by_hour)
+
+  Row count   : 24
+  Columns     : 7
+  Column list : hour_of_day, total_trips, total_revenue, avg_fare, avg_tip, avg_distance_miles, avg_passengers
+  [hour_of_day                 ]  min=0  max=23  avg=11.5  nulls=0 (0.0%)
+  [total_trips                 ]  min=31088  max=255697  avg=171073.25  nulls=0 (0.0%)
+  [total_revenue               ]  min=1023673.51  max=8251607.08  avg=5361319.9754  nulls=0 (0.0%)
+  [avg_fare                    ]  min=19.72  max=28.34  avg=22.7879  nulls=0 (0.0%)
+  [avg_tip                     ]  min=1.69  max=3.67  avg=2.6867  nulls=0 (0.0%)
+  [avg_distance_miles          ]  min=3.7555  max=27.4264  avg=8.3393  nulls=0 (0.0%)
+
+────────────────────────────────────────────────────────────  GOLD  (mart_trips_by_location)
+
+  Row count   : 259
+  Columns     : 7
+  Column list : pickup_location_id, total_trips, total_revenue, avg_fare, avg_distance_miles, avg_tip, active_days
+  [pickup_location_id          ]  min=1  max=265  avg=133.5367  nulls=0 (0.0%)
+  [total_trips                 ]  min=2  max=190295  avg=15852.3475  nulls=0 (0.0%)
+  [total_revenue               ]  min=101.65  max=12496139.59  avg=496801.851  nulls=0 (0.0%)
+  [avg_fare                    ]  min=14.77  max=92.08  avg=32.7107  nulls=0 (0.0%)
+  [avg_distance_miles          ]  min=1.9891  max=325.4562  avg=18.2745  nulls=0 (0.0%)
+  [avg_tip                     ]  min=0.0  max=12.39  avg=1.2886  nulls=0 (0.0%)
+
+────────────────────────────────────────────────────────────  GOLD  (mart_payment_breakdown)
+
+  Row count   : 5
+  Columns     : 8
+  Column list : payment_type, payment_method, total_trips, total_revenue, avg_fare, avg_tip, pct_of_trips, pct_of_revenue
+  [payment_type                ]  min=0  max=4  avg=2.0  nulls=0 (0.0%)
+  [total_trips                 ]  min=11866  max=2594106  avg=821151.6  nulls=0 (0.0%)
+  [total_revenue               ]  min=311400.73  max=80584382.07  avg=25734335.882  nulls=0 (0.0%)
+  [avg_fare                    ]  min=20.34  max=27.37  avg=22.684  nulls=0 (0.0%)
+  [avg_tip                     ]  min=0.0  max=4.4  avg=0.976  nulls=0 (0.0%)
+  [pct_of_trips                ]  min=0.29  max=63.18  avg=20.0  nulls=0 (0.0%)
+
+────────────────────────────────────────────────────────────  PIPELINE SUMMARY
+
+  Bronze rows        : 4,305,006
+  Silver rows        : 4,105,758
+  Rows removed       : 199,248  (4.63%  — dedup + quality filters)
+  Data quality score : 95.37%
+
+============================================================
+  Profile complete.
+============================================================

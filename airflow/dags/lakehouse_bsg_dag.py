@@ -91,5 +91,13 @@ with DAG(
         cwd=WORKDIR,
     )
 
+    # ── 08  Grafana JSON export ─────────────────────────────────────────
+    grafana_export = BashOperator(
+        task_id="08_grafana_export",
+        bash_command="python -m src.analytics.grafana_export",
+        env=DEFAULT_ENV,
+        cwd=WORKDIR,
+    )
+
     # ── DAG wiring ──────────────────────────────────────────────────────
-    ingest_bronze >> ge_gate >> dbt_silver >> dbt_gold >> dbt_tests >> profiler >> analytics_report
+    ingest_bronze >> ge_gate >> dbt_silver >> dbt_gold >> dbt_tests >> profiler >> analytics_report >> grafana_export

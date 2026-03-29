@@ -18,6 +18,7 @@ x-airflow-common: &airflow-common
     - ./dbt:/opt/airflow/dbt
     - ./data:/opt/airflow/data
     - ./reports:/opt/airflow/reports
+    - ./grafana/data:/opt/airflow/grafana/data
 
 services:
   postgres:
@@ -68,5 +69,34 @@ services:
     command: scheduler
     restart: always
 
+  # ── Grafana data API ─────────────────────────────────────────────────────────
+  # Serves the Gold-layer JSON exports so Grafana Infinity datasource can read them
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./grafana/data:/usr/share/nginx/html:ro
+      - ./grafana/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: always
+
+  # ── Grafana ──────────────────────────────────────────────────────────────────
+  grafana:
+    image: grafana/grafana-oss:10.4.2
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: lakehouse
+      GF_INSTALL_PLUGINS: yesoreyeram-infinity-datasource
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/lakehouse_dashboard.json
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - nginx
+    restart: always
+
 volumes:
   postgres-db-volume:
+  grafana-storage:

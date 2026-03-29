@@ -1,7 +1,7 @@
 {{
     config(
         materialized  = 'external',
-        location      = '../../data/gold/mart_revenue_daily.parquet',
+        location      = '/opt/airflow/data/gold/mart_revenue_daily.parquet',
         format        = 'parquet',
         options       = {'codec': 'snappy'}
     )

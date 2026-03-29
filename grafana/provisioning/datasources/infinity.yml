@@ -1,0 +1,11 @@
+apiVersion: 1
+datasources:
+  - name: Lakehouse
+    type: yesoreyeram-infinity-datasource
+    uid: lakehouse-infinity
+    access: proxy
+    isDefault: true
+    jsonData:
+      tlsSkipVerify: true
+    version: 1
+    editable: false
