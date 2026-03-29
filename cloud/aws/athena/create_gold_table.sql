@@ -12,5 +12,5 @@ CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.mart_revenue_daily (
     avg_passengers      DOUBLE
 )
 STORED AS PARQUET
-LOCATION 's3://1lakehousebatch/lakehouse/gold/'
+LOCATION 's3://1lakehousebatch/lakehouse/gold/mart_revenue_daily/'
 TBLPROPERTIES ('parquet.compress' = 'SNAPPY');
