@@ -8,7 +8,7 @@
 }}
 
 SELECT
-    DATE_TRUNC('day', pickup_datetime)::DATE AS trip_date,
+    strftime(DATE_TRUNC('day', pickup_datetime)::DATE, '%Y-%m-%d') AS trip_date,
     COUNT(*)                                 AS total_trips,
     ROUND(SUM(fare_amount),   2)             AS total_fare,
     ROUND(SUM(tip_amount),    2)             AS total_tips,

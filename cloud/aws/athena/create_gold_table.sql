@@ -3,7 +3,7 @@
 -- Region: us-east-1  |  Format: Parquet + Snappy
 
 CREATE EXTERNAL TABLE IF NOT EXISTS lakehouse.mart_revenue_daily (
-    trip_date           DATE,
+    trip_date           STRING,
     total_trips         BIGINT,
     total_fare          DOUBLE,
     total_tips          DOUBLE,
