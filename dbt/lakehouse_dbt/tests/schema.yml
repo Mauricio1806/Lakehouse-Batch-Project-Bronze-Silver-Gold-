@@ -1,43 +1,85 @@
 version: 2
 
 models:
+
+  # ── Silver ──────────────────────────────────────────────────────────────
   - name: stg_trips
-    description: "Cleaned and deduplicated NYC TLC yellow-taxi trips (Silver layer)"
+    description: "Cleaned, cast, and deduplicated NYC TLC yellow-taxi trips (Silver layer)"
     columns:
       - name: pickup_datetime
-        description: "Timestamp when meter was engaged"
-        tests:
-          - not_null
+        description: "Timestamp when the meter was engaged — not null"
+        tests: [not_null]
       - name: dropoff_datetime
-        description: "Timestamp when meter was disengaged"
-        tests:
-          - not_null
+        description: "Timestamp when the meter was disengaged — not null"
+        tests: [not_null]
       - name: fare_amount
-        description: "Meter fare; must be positive"
-        tests:
-          - not_null
+        description: "Metered fare; must be positive after Silver filter"
+        tests: [not_null]
       - name: total_amount
-        description: "Total charged to passenger"
-        tests:
-          - not_null
+        description: "Total amount charged to passenger"
+        tests: [not_null]
       - name: trip_distance
-        description: "Trip distance in miles; must be positive"
-        tests:
-          - not_null
+        description: "Trip distance in miles; must be positive after Silver filter"
+        tests: [not_null]
+      - name: payment_type
+        description: "Payment type code"
+        tests: [not_null]
 
+  # ── Gold ────────────────────────────────────────────────────────────────
   - name: mart_revenue_daily
     description: "Daily revenue and trip aggregates (Gold layer)"
     columns:
       - name: trip_date
-        description: "Calendar date of the trips"
-        tests:
-          - not_null
-          - unique
+        description: "Calendar date — unique, not null"
+        tests: [not_null, unique]
       - name: total_trips
-        description: "Number of trips on that day"
-        tests:
-          - not_null
+        description: "Number of trips on this date"
+        tests: [not_null]
       - name: total_revenue
-        description: "Sum of total_amount for all trips on that day"
-        tests:
-          - not_null
+        description: "Sum of total_amount for the day"
+        tests: [not_null]
+      - name: total_fare
+        description: "Sum of base fare for the day"
+        tests: [not_null]
+      - name: avg_distance_miles
+        description: "Average trip distance in miles"
+        tests: [not_null]
+
+  - name: mart_trips_by_hour
+    description: "Trip volume and revenue aggregated by hour of day (Gold layer)"
+    columns:
+      - name: hour_of_day
+        description: "Hour 0–23 — unique, not null"
+        tests: [not_null, unique]
+      - name: total_trips
+        description: "Total trips for this hour across all days"
+        tests: [not_null]
+      - name: total_revenue
+        description: "Total revenue for this hour"
+        tests: [not_null]
+
+  - name: mart_trips_by_location
+    description: "Trip volume and revenue per pickup location ID (Gold layer)"
+    columns:
+      - name: pickup_location_id
+        description: "TLC zone ID — unique, not null"
+        tests: [not_null, unique]
+      - name: total_trips
+        description: "Total trips originating from this zone"
+        tests: [not_null]
+      - name: total_revenue
+        description: "Total revenue from this zone"
+        tests: [not_null]
+
+  - name: mart_payment_breakdown
+    description: "Trip and revenue breakdown by payment method (Gold layer)"
+    columns:
+      - name: payment_type
+        description: "Payment type code — unique per method"
+        tests: [not_null, unique]
+      - name: payment_method
+        description: "Human-readable label for the payment type"
+        tests: [not_null]
+      - name: total_trips
+        description: "Total trips using this payment method"
+        tests: [not_null]

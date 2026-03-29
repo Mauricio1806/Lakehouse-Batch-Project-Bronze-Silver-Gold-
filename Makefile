@@ -1,8 +1,10 @@
 .PHONY: up down logs restart \
-        ingest ge-check dbt-run dbt-test dbt-all \
+        ingest ge-check \
+        dbt-silver dbt-gold dbt-all dbt-test \
+        profile report \
         pipeline clean-data help
 
-# ── Docker ──────────────────────────────────────────────────────────────────
+# ── Docker ───────────────────────────────────────────────────────────────
 up:
 	docker compose up -d
 
@@ -15,7 +17,7 @@ logs:
 restart:
 	docker compose restart
 
-# ── Local pipeline steps (run outside Docker, requires local Python env) ───
+# ── Local pipeline steps ─────────────────────────────────────────────────
 ingest:
 	python -m src.ingest.tlc_download
 	python -m src.ingest.tlc_to_bronze
@@ -23,44 +25,59 @@ ingest:
 ge-check:
 	python -m src.ge.ge_run
 
-dbt-run:
-	cd dbt/lakehouse_dbt && \
-	  DBT_PROFILES_DIR=. dbt run --profiles-dir . --project-dir .
+dbt-silver:
+	cd dbt/lakehouse_dbt && dbt run --select stg_trips --profiles-dir .
+
+dbt-gold:
+	cd dbt/lakehouse_dbt && dbt run --select gold --profiles-dir .
+
+dbt-all: dbt-silver dbt-gold
 
 dbt-test:
-	cd dbt/lakehouse_dbt && \
-	  DBT_PROFILES_DIR=. dbt test --profiles-dir . --project-dir .
+	cd dbt/lakehouse_dbt && dbt test --profiles-dir .
 
-dbt-all: dbt-run dbt-test
+profile:
+	python -m src.analytics.profile
 
-# ── Full end-to-end pipeline (local) ────────────────────────────────────────
-pipeline: ingest ge-check dbt-all
-	@echo "Pipeline complete. DuckDB: data/lakehouse.duckdb"
+report:
+	python -m src.analytics.report
+	@echo "Report saved to reports/"
 
-# ── Housekeeping ─────────────────────────────────────────────────────────────
+# ── Full end-to-end pipeline ─────────────────────────────────────────────
+pipeline: ingest ge-check dbt-all dbt-test profile report
+	@echo ""
+	@echo "Pipeline complete."
+	@echo "DuckDB  : data/lakehouse.duckdb"
+	@echo "Report  : reports/"
+
+# ── Housekeeping ─────────────────────────────────────────────────────────
 clean-data:
-	find data/raw     -name "*.parquet" -delete
-	find data/bronze  -name "*.parquet" -delete
-	find data/silver  -name "*.parquet" -delete
-	find data/gold    -name "*.parquet" -delete
+	find data/raw    -name "*.parquet" -delete 2>/dev/null || true
+	find data/bronze -name "*.parquet" -delete 2>/dev/null || true
+	find data/silver -name "*.parquet" -delete 2>/dev/null || true
+	find data/gold   -name "*.parquet" -delete 2>/dev/null || true
+	rm -f data/lakehouse.duckdb
 
 help:
 	@echo ""
 	@echo "Usage: make <target>"
 	@echo ""
-	@echo "Docker:"
-	@echo "  up            Start Airflow + Postgres in Docker"
-	@echo "  down          Stop and remove containers + volumes"
-	@echo "  logs          Tail all container logs"
-	@echo "  restart       Restart all containers"
+	@echo "  Docker:"
+	@echo "    up            Start Airflow + Postgres in Docker"
+	@echo "    down          Stop and remove containers + volumes"
+	@echo "    logs          Tail all container logs"
+	@echo "    restart       Restart containers"
 	@echo ""
-	@echo "Local pipeline:"
-	@echo "  ingest        Download TLC parquet + write Bronze"
-	@echo "  ge-check      Great Expectations quality gate on Bronze"
-	@echo "  dbt-run       Run dbt Silver + Gold models"
-	@echo "  dbt-test      Run dbt schema tests"
-	@echo "  pipeline      Full end-to-end (ingest → ge → dbt)"
+	@echo "  Local pipeline:"
+	@echo "    ingest        Download TLC parquet + write Bronze"
+	@echo "    ge-check      Quality gate on Bronze"
+	@echo "    dbt-silver    Run stg_trips model"
+	@echo "    dbt-gold      Run all Gold models"
+	@echo "    dbt-test      Run dbt schema tests"
+	@echo "    profile       Data profiler (prints + saves txt)"
+	@echo "    report        Generate HTML analytics dashboard"
+	@echo "    pipeline      Full end-to-end run"
 	@echo ""
-	@echo "Housekeeping:"
-	@echo "  clean-data    Remove all generated parquet files"
+	@echo "  Housekeeping:"
+	@echo "    clean-data    Remove all generated parquet + duckdb files"
 	@echo ""
